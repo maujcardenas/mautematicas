@@ -9,7 +9,7 @@ const config = {
     preprocess: mdsvex({
         extensions: ['.md'],
         remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex]
+        rehypePlugins: [[rehypeKatex, { output: 'html' }]]
     }),
     kit: {
         adapter: adapter()
