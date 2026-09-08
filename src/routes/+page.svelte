@@ -8,8 +8,8 @@
 </script>
 
 <section class="hero">
-    <h1>Innovación y Análisis Estructural</h1>
-    <p>Soluciones técnicas y artículos de divulgación científica.</p>
+    <h1>Mautematicas</h1>
+    <p>Clases de matemáticas como apoyo a tus materias y carrera.</p>
 </section>
 
 <section id="archive">
@@ -29,11 +29,19 @@
 <section id="about" class="about">
     <img src="https://via.placeholder.com/150x200" alt="Autor" />
     <div>
-        <h2>Sobre el Autor</h2>
+        <h2>Sobre Mauricio Cárdenas</h2>
         <p>
-            Ingeniero investigador especializado en métodos numéricos y
-            optimización computacional. Enfoque orientado a la resolución
-            algorítmica de problemas físicos complejos.
+            Estudié matemáticas puras en la Universidad San Franciso de Quito, y
+            he enseñado desde que tengo 14 años a cientos de estudiantes, con
+            ello he adquirido experiencia en identificar los obstáculos más
+            comunes para el aprendizaje y ofrecer una guía bastante
+            personalizada para las habilidades, gustos y objetivos de cada
+            estudiante. Disfruto mucho la resolución de problemas matemáticos y
+            el entendimiento profundo de conceptos matemáticos. Las matemáticas
+            no solo son útiles para construir, entender o desarrollar cosas,
+            también las he tenido como un entrenamiento mental, incluso
+            espiritual que mantiene y desarrolla la mente sana y se transfiere
+            bien a otros ámbitos de la vida.
         </p>
     </div>
 </section>

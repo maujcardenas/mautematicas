@@ -7,9 +7,9 @@
             <a href="#services">Servicios</a>
         </nav>
         <div class="socials">
-            <a href="#">IN</a>
-            <a href="#">YT</a>
-            <a href="#">WA</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">YouTube</a>
+            <a href="#">WhatsApp</a>
         </div>
     </div>
 </header>
