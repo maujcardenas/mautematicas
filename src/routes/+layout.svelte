@@ -19,10 +19,7 @@
 <style>
     :global(body) {
         margin: 0;
-        font-family:
-            system-ui,
-            -apple-system,
-            sans-serif;
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
         background-color: #f5f5f5;
         color: #111111;
         line-height: 1.4;
