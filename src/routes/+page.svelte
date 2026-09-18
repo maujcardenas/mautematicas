@@ -66,7 +66,9 @@
                     question="¿Tiempos de entrega?"
                     answer="Estándar de 2 a 4 semanas según la complejidad computacional."
                 />
-                <a href="#" class="btn-small">Solicitar Información (WA)</a>
+                <a href="https://wa.me/593984029541" class="btn-small"
+                    >Solicitar Información (WA)</a
+                >
             </div>
         </div>
     {/each}
