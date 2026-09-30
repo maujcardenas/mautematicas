@@ -1,11 +1,11 @@
 <script>
-    export let blogCategories = [];
+    let { blogCategories = [] } = $props();
 </script>
 
 <section>
     <h2>Nuestros Casos de Éxito</h2>
     <div class="grid-2">
-        {#each BlogCategories as story}
+        {#each blogCategories as story}
             <div class="card">
                 <img src={story.image} alt={story.alt} />
                 <div class="card-body">

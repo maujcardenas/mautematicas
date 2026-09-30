@@ -74,14 +74,14 @@
             description:
                 "Por si te preguntabas cómo se mueven las cosas, y ¿por qué?, advertencia: seguimos sin saberlo",
             image: "/images/brand/fisica-i.jpg",
-            alt: "Proyecto 6",
+            alt: "Proyecto 7",
         },
         {
             title: "Física  II: Electromagnetismo",
             description:
                 "El camino hacia la luz, cuando los físicos pensaron que habían resuelto la física con este último gran tema, la velocidad de la luz fue el origen de todo el derrumbe de la física clásica y el nacimiento de la física cuántica. Adéntrate en el entendimiento de los campos electro-magnéticos",
             image: "/images/brand/fisica-ii.jpg",
-            alt: "Proyecto 6",
+            alt: "Proyecto 8",
         },
     ];
 </script>
