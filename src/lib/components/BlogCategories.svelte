@@ -5,7 +5,7 @@
 <section>
     <h2>Nuestros Casos de Éxito</h2>
     <div class="grid-2">
-        {#each stories as story}
+        {#each BlogCategories as story}
             <div class="card">
                 <img src={story.image} alt={story.alt} />
                 <div class="card-body">
