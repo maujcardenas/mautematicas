@@ -1,8 +1,10 @@
 <script>
     import HeroSection from "$lib/components/HeroSection.svelte";
+    import Specialties from "$lib/components/Specialties.svelte";
 </script>
 
 <HeroSection />
+<Specialties />
 
 <style>
     .layout-container {
