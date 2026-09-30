@@ -3,13 +3,6 @@
     import Footer from "$lib/components/Footer.svelte";
 </script>
 
-<svelte:head>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
-    />
-</svelte:head>
-
 <Header />
 <main>
     <slot />
@@ -19,23 +12,43 @@
 <style>
     :global(body) {
         margin: 0;
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-        background-color: #f5f5f5;
-        color: #111111;
-        line-height: 1.4;
-        font-size: 14px;
+        padding: 0;
+        font-family: "Akt", sans-serif, system-ui;
+        background-color: #ffffff;
+        color: #2a2829;
+    }
+    :global(h1, h2, h3, h4) {
+        color: #2a2829;
+        margin-bottom: 0.5rem;
+    }
+    :global(p, span, li) {
+        color: #2a2829;
     }
     :global(a) {
+        color: #0c325a;
         text-decoration: none;
-        color: #0055aa;
     }
-    :global(*) {
-        box-sizing: border-box;
+    :global(.btn) {
+        display: inline-block;
+        background-color: #0c325a;
+        color: #ffffff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        text-align: center;
+    }
+    :global(.btn:hover) {
+        opacity: 0.9;
+    }
+    :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
     }
     main {
-        min-height: 80vh;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1rem;
+        padding-top: 70px; /*por el header fijo */
+        min-height: calc(100vh - 200px);
     }
 </style>
