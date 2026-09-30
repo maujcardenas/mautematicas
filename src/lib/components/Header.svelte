@@ -18,9 +18,9 @@
             <div class="logo">
                 <a href="/" class="brand-link">
                     <img
-                        src="/images/brand/tusitiowp-logo-darkbg-t.png"
-                        alt="Logo Tu Sitio WP"
-                        width="1000"
+                        src="/images/brand/favicon.webp"
+                        alt="Logo Mautematicas"
+                        width="500"
                         height="500"
                     />
                 </a>
@@ -30,10 +30,18 @@
                 <a href="/login" class="login-link">Iniciar sesión</a>
 
                 <div class="social-icons">
-                    <a href="#linkedin" aria-label="LinkedIn">
+                    <a 
+                        href="https://www.linkedin.com/in/mauriciojc/" 
+                        aria-label="LinkedIn 
+                        target="_blank"
+                        rel="noopener noreferrer"">
                         <LinkedInLogo />
                     </a>
-                    <a href="#youtube" aria-label="YouTube">
+                    <a 
+                        href="https://www.youtube.com/@mautematicas" 
+                        aria-label="YouTube 
+                        target="_blank"
+                        rel="noopener noreferrer"">
                         <YouTubeLogo />
                     </a>
                     <a
@@ -75,7 +83,7 @@
                 <a href="/login" class="login-link">Iniciar sesión</a>
                 <div class="social-icons">
                     <a
-                        href="https://www.linkedin.com/company/tusitio-wp"
+                        href="https://www.linkedin.com/in/mauriciojs"
                         aria-label="LinkedIn"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -83,7 +91,7 @@
                         <LinkedInLogo />
                     </a>
                     <a
-                        href="http://www.youtube.com/@TuSitioWP"
+                        href="http://www.youtube.com/@mautematicas"
                         aria-label="YouTube"
                         target="_blank"
                         rel="noopener noreferrer"

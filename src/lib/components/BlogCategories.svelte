@@ -1,5 +1,5 @@
 <script>
-    export let stories = [];
+    export let blogCategories = [];
 </script>
 
 <section>

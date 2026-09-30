@@ -4,23 +4,21 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Tu Sitio WordPress</h1>
+        <h1>Mautematicas</h1>
         <p class="hero-description">
-            Adquiere un sitio web Wordpress y gestiona tu presencia en línea sin
-            complicaciones. Hosting de alta calidad. Acompañamiento experto.
-            Precios y procesos transparentes. Educación continua en tecnologías
-            web.
+            Tutorías, educación y cursos para tus materias universitarias de
+            matemáticas o física en ciencias o ingeniería.
         </p>
         <div class="hero-actions">
-            <a href="#servicios" class="btn">Ver Servicios</a>
-            <a href="#contacto" class="btn btn-dark">Contáctanos</a>
+            <a href="#blog" class="btn">Ver Artículos</a>
+            <a href="#book-class" class="btn btn-dark">Agenda una tutoría</a>
         </div>
     </div>
 </section>
 
 <style>
     .hero {
-        background-image: url("/images/brand/banner-mautematicas.jpg");
+        background-image: url("/images/brand/banner.jpg");
         background-size: cover;
         background-position: center;
         padding: 16rem 2rem;

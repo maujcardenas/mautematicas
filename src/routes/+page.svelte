@@ -1,142 +1,86 @@
 <script>
     import HeroSection from "$lib/components/HeroSection.svelte";
-    import SuccessStories from "$lib/components/SuccessStories.svelte";
+    import BlogCategories from "$lib/components/BlogCategories.svelte";
     import ReviewsEmbed from "$lib/components/ReviewsEmbed.svelte";
     import Specialties from "$lib/components/Specialties.svelte";
-    import ServicesCalculator from "$lib/components/ServicesCalculator.svelte";
-    import WhyChooseUs from "$lib/components/WhyChooseUs.svelte";
+    import BlogTable from "$lib/components/BlogTable.svelte";
     import Packages from "$lib/components/Packages.svelte";
     import ContactForm from "$lib/components/ContactForm.svelte";
     import LearnCallout from "$lib/components/LearnCallout.svelte";
 
-    const servicios = [
+    const articles = [
         {
             id: "dom",
-            nombre: "Dominio .com, .net, .org",
-            rec: "anual",
-            precio: 16,
-            tipo: "Dominio",
+            title: "Ser malo en mate es un mito",
+            category: "Consejos",
         },
         {
             id: "h6",
-            nombre: "Hosting 6Gb",
-            rec: "anual",
-            precio: 80,
-            tipo: "Hosting",
+            title: "Los logaritmos son una tecnología del diablo",
+            category: "anual",
         },
         {
             id: "h10",
-            nombre: "Hosting 10Gb",
-            rec: "anual",
-            precio: 100,
-            tipo: "Hosting",
-        },
-        {
-            id: "h14",
-            nombre: "Hosting 14Gb",
-            rec: "anual",
-            precio: 120,
-            tipo: "Hosting",
-        },
-        {
-            id: "e1",
-            nombre: "Plan 1-3 correos 1Gb/c",
-            rec: "anual",
-            precio: 12,
-            tipo: "Correos",
-        },
-        {
-            id: "e4",
-            nombre: "Plan 4-10 correos 1Gb/c",
-            rec: "anual",
-            precio: 32,
-            tipo: "Correos",
-        },
-        {
-            id: "e10",
-            nombre: "Plan 10-50 correos 1Gb/c",
-            rec: "anual",
-            precio: 48,
-            tipo: "Correos",
-        },
-        {
-            id: "ep",
-            nombre: "Plan 1 correo premium 30Gb",
-            rec: "anual",
-            precio: 30,
-            tipo: "Correos",
-        },
-        {
-            id: "w1",
-            nombre: "Desarrollo pág. mediana (5-8 sec)",
-            rec: "único",
-            precio: 180,
-            tipo: "Diseño Web",
-        },
-        {
-            id: "w2",
-            nombre: "Desarrollo pág. grande (>8 sec)",
-            rec: "único",
-            precio: 280,
-            tipo: "Diseño Web",
-        },
-        {
-            id: "w3",
-            nombre: "Desarrollo pág. mediana + Ecommerce",
-            rec: "único",
-            precio: 300,
-            tipo: "Diseño Web",
-        },
-        {
-            id: "c1",
-            nombre: "1 hora de consultoría",
-            rec: "único",
-            precio: 25,
-            tipo: "Consultoría",
+            title: "La prueba de sin(x)/x hacia 1",
+            category: "Cálculo Diferencial e Integral",
         },
     ];
 
-    const successStories = [
+    const blogCategories = [
         {
-            title: "Nia Party",
+            title: "Cálculo Diferencial e Integral",
             description:
-                "Eventos infantiles para la ciudad de Utrech en Holanda",
-            image: "/images/brand/port-niaparty.jpg",
+                "Lo único permanente es el cambio, y la derivada es una forma matemática de estudiarlo. Aprende todo sobre el cálculo, inventado por Newton y Liebniz, revolucionando al mundo.",
+            image: "/images/brand/calculo-dif-int.jpg",
             alt: "Proyecto 1",
         },
         {
-            title: "Actor Performer",
+            title: "Cálculo Multivariable",
             description:
-                "Portafolio artístico para un grupo de ensayos, actuación y artes performáticas.",
-            image: "/images/brand/port-actor-performer-screen.jpg",
+                "Los increíbles teoremas fundamentales en 3D, esenciales para el electromagnetismo, la mecánica de fluidos y supremamente impresionantes en análisis real.",
+            image: "/images/brand/calculo-multivariable.jpg",
             alt: "Proyecto 2",
         },
         {
-            title: "Himchari TKD",
+            title: "Álgebra Lineal",
             description:
-                "Academia de Tae Kwon Do en Quito, con cursos y seguimiento de ascensos",
-            image: "/images/brand/port-himcharitkd-screen.jpg",
+                "Al inicio parece que son solo matrices y sistemas de ecuaciones, luego se ve que es el estudio de las transformaciones en el espacio o sus equivalentes, y luego se conoce que podría ser el tejido de la realidad. Y todo esto tiene una infinidad de aplicaciones en el mundo estadístico, físico, computacional.",
+            image: "/images/brand/algebra-lineal.jpg",
             alt: "Proyecto 3",
         },
         {
-            title: "Mamallacta Lodge",
+            title: "Matemáticas Discretas",
             description:
-                "Hotel en Papallacta, Napo, con una propuesta diferente e identidad de marca colorida",
-            image: "/images/brand/port-mamallacta-screen.jpg",
+                "Cuando pensabas que contar cosas era fácil, se nos ocurrió estudiar los números naturales, las combinaciones, los algoritmos, los grafos.",
+            image: "/images/brand/mat-discretas.jpg",
             alt: "Proyecto 4",
         },
         {
-            title: "Flight Level Studios",
+            title: "Estadística",
             description:
-                "Inicialmente un sitio portafolio de fotografía de aviación, ahora además un Broker y Manager de Aeroplanos basado en Florida, EEUU",
-            image: "/images/brand/port-flightlevelstudios-screen.jpg",
+                "Adquiere la habilidad de hacer estudios científicos, de saber el valor p de tus hipótesis, de analizar e interpretar datos que hoy vienen en masa.",
+            image: "/images/brand/estadistica.jpg",
             alt: "Proyecto 5",
         },
         {
-            title: "InDomus Ec",
+            title: "Ecuaciones Diferenciales",
             description:
-                "Consultoría financiera y contable para empresas en Quito, también con servicios internacionales",
-            image: "/images/brand/port-indomusec-screen.jpg",
+                "El lenguaje de las leyes físicas, conoce que son los atractores o repulsores, y dale una miradita al caos",
+            image: "/images/brand/ec-diferenciales.jpg",
+            alt: "Proyecto 6",
+        },
+        {
+            title: "Física I: Mecánica",
+            description:
+                "Por si te preguntabas cómo se mueven las cosas, y ¿por qué?, advertencia: seguimos sin saberlo",
+            image: "/images/brand/fisica-i.jpg",
+            alt: "Proyecto 6",
+        },
+        {
+            title: "Física  II: Electromagnetismo",
+            description:
+                "El camino hacia la luz, cuando los físicos pensaron que habían resuelto la física con este último gran tema, la velocidad de la luz fue el origen de todo el derrumbe de la física clásica y el nacimiento de la física cuántica. Adéntrate en el entendimiento de los campos electro-magnéticos",
+            image: "/images/brand/fisica-ii.jpg",
             alt: "Proyecto 6",
         },
     ];
@@ -145,11 +89,11 @@
 <HeroSection />
 
 <div class="layout-container">
-    <SuccessStories stories={successStories} />
+    <BlogCategories {blogCategories} />
     <ReviewsEmbed />
     <Specialties />
-    <ServicesCalculator {servicios} />
-    <WhyChooseUs />
+    <BlogTable {articles} />
+
     <Packages />
     <LearnCallout />
     <ContactForm />
