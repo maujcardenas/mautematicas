@@ -11,10 +11,11 @@
                 <tr>
                     <th>Título</th>
                     <th>Categoría</th>
+                    <th>CTA</th>
                 </tr>
             </thead>
             <tbody>
-                {#each servicios as s}
+                {#each articles as s}
                     <tr>
                         <td class="font-medium">{s.title}</td>
                         <td><span class="badge">{s.category}</span></td>

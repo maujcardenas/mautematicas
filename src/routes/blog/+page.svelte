@@ -1,5 +1,4 @@
 <script>
-    import HeroSection from "$lib/components/HeroSection.svelte";
     export let data;
 
     let searchQuery = "";
@@ -23,7 +22,6 @@
 </script>
 
 <div class="layout-container" style="padding-top: 2rem;">
-    <HeroSection />
     <h1>Educación y Aprendizaje</h1>
 
     <div
