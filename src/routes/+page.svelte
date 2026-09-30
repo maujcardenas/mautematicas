@@ -1,6 +1,6 @@
 <script>
     import HeroSection from "$lib/components/HeroSection.svelte";
-    import BlogCategories from "$lib/components/BlogCategories.svelte";
+    // import BlogCategories from "$lib/components/BlogCategories.svelte";
     import ReviewsEmbed from "$lib/components/ReviewsEmbed.svelte";
     import Specialties from "$lib/components/Specialties.svelte";
     import BlogTable from "$lib/components/BlogTable.svelte";
