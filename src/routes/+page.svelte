@@ -89,7 +89,7 @@
 <HeroSection />
 
 <div class="layout-container">
-    <BlogCategories blogCategories={blogCateg} />
+    <!-- <BlogCategories blogCategories={blogCateg} /> -->
     <ReviewsEmbed />
     <Specialties />
     <BlogTable {articles} />
