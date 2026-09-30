@@ -2,6 +2,7 @@
     import HeroSection from "$lib/components/HeroSection.svelte";
     import Specialties from "$lib/components/Specialties.svelte";
     import BlogCategories from "$lib/components/BlogCategories.svelte";
+    import BlogTable from "$lib/components/BlogTable.svelte";
 
     const blogCateg = [
         {
@@ -12,11 +13,19 @@
             alt: "Proyecto 1",
         },
     ];
+    const articles = [
+        {
+            id: "dom",
+            title: "Ser malo en mate es un mito",
+            category: "Consejos",
+        },
+    ];
 </script>
 
 <HeroSection />
 <Specialties />
 <BlogCategories blogCategories={blogCateg} />
+<BlogTable {articles} />
 
 <style>
     .layout-container {
