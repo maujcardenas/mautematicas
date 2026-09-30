@@ -1,10 +1,22 @@
 <script>
     import HeroSection from "$lib/components/HeroSection.svelte";
     import Specialties from "$lib/components/Specialties.svelte";
+    import BlogCategories from "$lib/components/BlogCategories.svelte";
+
+    const blogCateg = [
+        {
+            title: "Cálculo Diferencial e Integral",
+            description:
+                "Lo único permanente es el cambio, y la derivada es una forma matemática de estudiarlo. Aprende todo sobre el cálculo, inventado por Newton y Liebniz, revolucionando al mundo.",
+            image: "/images/brand/calculo-dif-int.png",
+            alt: "Proyecto 1",
+        },
+    ];
 </script>
 
 <HeroSection />
 <Specialties />
+<BlogCategories blogCategories={blogCateg} />
 
 <style>
     .layout-container {
