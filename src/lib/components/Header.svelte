@@ -30,18 +30,20 @@
                 <a href="/login" class="login-link">Iniciar sesión</a>
 
                 <div class="social-icons">
-                    <a 
-                        href="https://www.linkedin.com/in/mauriciojc/" 
-                        aria-label="LinkedIn 
+                    <a
+                        href="https://www.linkedin.com/in/mauriciojc/"
+                        aria-label="LinkedIn"
                         target="_blank"
-                        rel="noopener noreferrer"">
+                        rel="noopener noreferrer"
+                    >
                         <LinkedInLogo />
                     </a>
-                    <a 
-                        href="https://www.youtube.com/@mautematicas" 
-                        aria-label="YouTube 
+                    <a
+                        href="https://www.youtube.com/@mautematicas"
+                        aria-label="YouTube"
                         target="_blank"
-                        rel="noopener noreferrer"">
+                        rel="noopener noreferrer"
+                    >
                         <YouTubeLogo />
                     </a>
                     <a
