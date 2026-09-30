@@ -26,7 +26,7 @@
         },
     ];
 
-    const blogCategories = [
+    const blogCateg = [
         {
             title: "Cálculo Diferencial e Integral",
             description:
@@ -89,7 +89,7 @@
 <HeroSection />
 
 <div class="layout-container">
-    <BlogCategories {blogCategories} />
+    <BlogCategories blogCategories={blogCateg} />
     <ReviewsEmbed />
     <Specialties />
     <BlogTable {articles} />
