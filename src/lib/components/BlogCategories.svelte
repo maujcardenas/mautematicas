@@ -3,14 +3,14 @@
 </script>
 
 <section>
-    <h2>Nuestros Casos de Éxito</h2>
+    <h2>Materias</h2>
     <div class="grid-2">
-        {#each blogCategories as story (story.title)}
+        {#each blogCategories as category (category.title)}
             <div class="card">
-                <img src={story.image} alt={story.alt} />
+                <img src={category.image} alt={category.alt} />
                 <div class="card-body">
-                    <h3 class="card-title">{story.title}</h3>
-                    <p>{story.description}</p>
+                    <h3 class="card-title">{category.title}</h3>
+                    <p>{category.description}</p>
                 </div>
             </div>
         {/each}

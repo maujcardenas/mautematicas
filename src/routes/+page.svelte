@@ -30,56 +30,56 @@
         {
             title: "Cálculo Diferencial e Integral",
             description:
-                "Lo único permanente es el cambio, y la derivada es una forma matemática de estudiarlo. Aprende todo sobre el cálculo, inventado por Newton y Liebniz, revolucionando al mundo.",
+                "Estudio del cambio continuo mediante límites, derivadas e integrales, unificados por el Teorema Fundamental. Constituye una herramienta indispensable para modelar sistemas en ciencias e ingeniería.",
             image: "/images/brand/calculo-dif-int.png",
             alt: "Proyecto 1",
         },
         {
             title: "Cálculo Multivariable",
             description:
-                "Los increíbles teoremas fundamentales en 3D, esenciales para el electromagnetismo, la mecánica de fluidos y supremamente impresionantes en análisis real.",
+                "Extensión del cálculo al espacio n-dimensional mediante campos escalares y vectoriales, derivadas parciales e integrales múltiples. Fundamental para comprender la mecánica de fluidos, la optimización y el electromagnetismo.",
             image: "/images/brand/calculo-multivariable.png",
             alt: "Proyecto 2",
         },
         {
             title: "Álgebra Lineal",
             description:
-                "Al inicio parece que son solo matrices y sistemas de ecuaciones, luego se ve que es el estudio de las transformaciones en el espacio o sus equivalentes, y luego se conoce que podría ser el tejido de la realidad. Y todo esto tiene una infinidad de aplicaciones en el mundo estadístico, físico, computacional.",
+                "Análisis de espacios vectoriales, matrices y transformaciones lineales. Proporciona la estructura base para la computación científica, el aprendizaje automático, la mecánica cuántica, el tratamiento de datos y de hecho miles de aplicaciones.",
             image: "/images/brand/algebra-lineal.png",
             alt: "Proyecto 3",
         },
         {
             title: "Matemáticas Discretas",
             description:
-                "Cuando pensabas que contar cosas era fácil, se nos ocurrió estudiar los números naturales, las combinaciones, los algoritmos, los grafos.",
+                "Estudio de estructuras discontinuas como grafos, conjuntos, lógica formal y combinatoria. Es el fundamento teórico clave de las ciencias de la computación, la criptografía y el análisis algorítmico.",
             image: "/images/brand/mat-discretas.png",
             alt: "Proyecto 4",
         },
         {
             title: "Estadística",
             description:
-                "Adquiere la habilidad de hacer estudios científicos, de saber el valor p de tus hipótesis, de analizar e interpretar datos que hoy vienen en masa.",
+                "Modelado probabilístico, inferencia y contraste de hipótesis para la interpretación de los experimentos científicos. Esencial para la toma de decisiones basada en evidencia y el análisis de datos a gran escala.",
             image: "/images/brand/estadistica.png",
             alt: "Proyecto 5",
         },
         {
             title: "Ecuaciones Diferenciales",
             description:
-                "El lenguaje de las leyes físicas, conoce que son los atractores o repulsores, y dale una miradita al caos",
+                "Modelado matemático de razones de cambio interdependientes,  métodos analíticos y números para hallar soluciones y estudiar comportamiento de sistemas dinámicos. Esencial para describir fenómenos evolutivos en física, biología y economía.",
             image: "/images/brand/ec-diferenciales.png",
             alt: "Proyecto 6",
         },
         {
             title: "Física I: Mecánica",
             description:
-                "Por si te preguntabas cómo se mueven las cosas, y ¿por qué?, advertencia: seguimos sin saberlo",
+                "Formulación de las leyes de Newton, conservación de energía, momento y dinámica de rotación. Otorga el marco necesario para comprender las interacciones fundamentales del movimiento clásico.",
             image: "/images/brand/fisica-i.png",
             alt: "Proyecto 7",
         },
         {
             title: "Física II: Electromagnetismo",
             description:
-                "El camino hacia la luz, cuando los físicos pensaron que habían resuelto la física con este último gran tema, la velocidad de la luz fue el origen de todo el derrumbe de la física clásica y el nacimiento de la física cuántica. Adéntrate en el entendimiento de los campos electro-magnéticos",
+                "Análisis de campos eléctricos y magnéticos unificados mediante las ecuaciones de Maxwell y ondas electromagnéticas. Fundamental para comprender la tecnología moderna (electricidad, magnetismo, potencia) y la transición histórica hacia la física moderna.",
             image: "/images/brand/fisica-ii.png",
             alt: "Proyecto 8",
         },
