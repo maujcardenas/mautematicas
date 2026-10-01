@@ -44,11 +44,18 @@
     :global(.btn:hover) {
         opacity: 0.9;
     }
+    :global(.section-title){
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.75rem;
+        color: #000000;
+    }
     :global(img) {
         max-width: 100%;
         height: auto;
         border-radius: 4px;
     }
+
     main {
         padding-top: 70px; /*por el header fijo */
         min-height: calc(100vh - 200px);

@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <h2>Servicios</h2>
+    <h2 class="section-title">Servicios</h2>
     <p class="section-subtitle">¿Qué puedes encontrar en esta página web.</p>
 
     <div class="grid-3">

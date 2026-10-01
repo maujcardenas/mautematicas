@@ -71,12 +71,10 @@
         <div class="navigation-wrapper {menuOpen ? 'open' : ''}">
             <nav class="main-nav">
                 <a href="/">Inicio</a>
-                <a href="/portafolio">Portafolio</a>
+                <a href="/portafolio">Materias</a>
                 <a href="/testimonios">Testimonios</a>
-                <a href="/especialidades">Especialidades</a>
-                <a href="/precios">Precios y servicios</a>
-                <a href="/paquetes-todo-1">Paquetes predeterminados</a>
-                <a href="/blog">Educación y Recursos</a>
+                <a href="/especialidades">Servicios</a>
+                <a href="/blog">Blog</a>
                 <a href="/contacto">Contacto</a>
             </nav>
 

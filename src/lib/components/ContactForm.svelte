@@ -3,6 +3,7 @@
 </script>
 
 <section id="contacto">
+    <h2 class="section-title">Contacto</h2>
     <div class="grid-2">
         <div class="card card-body">
             <h2>Contáctanos</h2>
@@ -35,10 +36,15 @@
         </div>
         <div>
             <img
-                src="https://via.placeholder.com/600x450"
-                alt="Nuestro Personal"
+                src="/images/brand/mau-selfie.jpg"
+                alt="Mauri - Photo"
                 class="contact-image"
             />
+            <p>
+                Aquí turisteando (en el Pailón del Diablo, Baños, Ec) sin hacer
+                matemáticas
+            </p>
+            <p>Mauricio Cárdenas - Autor/Profesor para este blog</p>
         </div>
     </div>
 </section>

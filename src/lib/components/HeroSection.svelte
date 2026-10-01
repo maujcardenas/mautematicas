@@ -5,10 +5,7 @@
 <section class="hero">
     <div class="hero-content">
         <h1>Mautematicas</h1>
-        <p class="hero-description">
-            Tutorías, educación y cursos para tus materias universitarias de
-            matemáticas o física en ciencias o ingeniería.
-        </p>
+        <p class="hero-description">Ayuda para tus materias en matemáticas.</p>
         <div class="hero-actions">
             <a href="#blog" class="btn">Ver Artículos</a>
             <a href="#book-class" class="btn btn-dark">Agenda una tutoría</a>

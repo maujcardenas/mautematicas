@@ -1,36 +1,34 @@
 <footer>
     <div class="footer-grid">
         <div class="col">
-            <span class="brand-title">Tu Sitio WP</span>
+            <span class="brand-title">Mautematicas</span>
             <div class="logo">
                 <a href="/" class="brand-link">
                     <img
-                        src="/images/brand/tusitiowp-logo-darkbg-t.png"
+                        src="/images/brand/favicon.webp"
                         alt="Logo Tu Sitio WP"
-                        width="1000"
+                        width="500"
                         height="500"
                     />
                 </a>
             </div>
-            <p>
-                Adquiere un sitio web Wordpress y gestiona tu presencia en línea
-                sin complicaciones. Hosting de alta calidad. Acompañamiento
-                experto. Precios y procesos transparentes. Educación continua en
-                tecnologías web.
-            </p>
+            <p>Ayuda para tus materias en matemáticas.</p>
         </div>
         <div class="col">
             <h4 class="col-title">Menú Principal</h4>
             <a href="/">Inicio</a>
+            <a href="#materias">Materias</a>
+            <a href="#testimonios">Testimonios</a>
             <a href="#servicios">Servicios</a>
-            <a href="/blog">Educación</a>
+            <a href="/blog">Blog</a>
+            <a href="#contacto">Contacto</a>
         </div>
         <div class="col">
             <h4 class="col-title">Contacto y Redes</h4>
-            <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
-            <a href="#whatsapp">WhatsApp</a>
-            <a href="#linkedin">LinkedIn</a>
-            <a href="#youtube">YouTube</a>
+            <a href="mailto:mau@mauriciojc.com">mau@mauriciojc.com</a>
+            <a href="https://wa.me/593984029541">WhatsApp</a>
+            <a href="https://linkedin.com/in/mauriciojc">LinkedIn</a>
+            <a href="https://youtube.com/@mautematicas">YouTube</a>
         </div>
     </div>
 </footer>
@@ -79,5 +77,8 @@
         .footer-grid {
             grid-template-columns: 1fr;
         }
+    }
+    p {
+        color: #ffffff;
     }
 </style>

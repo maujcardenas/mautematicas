@@ -29,7 +29,7 @@
 </script>
 
 <section class="testimonials-container">
-	<h2>Testimonios de estudiantes</h2>
+	<h2 class="section-title">Testimonios de estudiantes</h2>
 
 	<div class="grid-2">
 		{#each testimonials as item (item.id)}
@@ -63,13 +63,6 @@
 		padding: 2rem 1rem;
 	}
 
-	h2 {
-		text-align: center;
-		margin-bottom: 2rem;
-		font-size: 1.75rem;
-		color: #1a1a1a;
-	}
-
 	.grid-2 {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -78,7 +71,7 @@
 
 	.testimonial-card {
 		border: 1px solid #2a2829;
-		background-color: #f8f3f2;
+		background-color: #e0f2fe;
 		border-radius: 12px;
 		padding: 1.75rem;
 		display: flex;

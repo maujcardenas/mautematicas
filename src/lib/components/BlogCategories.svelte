@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <h2>Materias</h2>
+    <h2 class="section-title">Materias</h2>
     <div class="grid-2">
         {#each blogCategories as category (category.title)}
             <div class="card">
