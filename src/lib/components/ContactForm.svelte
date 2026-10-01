@@ -51,8 +51,8 @@
     }
 
     .card {
-        background-color: #00233d;
-        border: 1px solid #71717a;
+        background-color: #e0f2fe;
+        border: 1px solid #2a2829;
         border-radius: 12px;
         overflow: hidden;
     }
@@ -66,7 +66,7 @@
     }
 
     .form-label {
-        color: #18181b;
+        color: #2a2829;
         display: block;
         margin-bottom: 0.25rem;
     }
@@ -74,10 +74,10 @@
     .input-field {
         width: 100%;
         padding: 0.5rem;
-        border: 1px solid #71717a;
+        border: 1px solid #2a2829;
         border-radius: 4px;
-        background-color: #f3f6f4;
-        color: #18181b;
+        background-color: #f8fafc;
+        color: #2a2829;
         box-sizing: border-box;
     }
 
