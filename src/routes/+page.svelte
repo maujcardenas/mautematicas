@@ -1,12 +1,10 @@
 <script>
     import HeroSection from "$lib/components/HeroSection.svelte";
     import BlogCategories from "$lib/components/BlogCategories.svelte";
-    import ReviewsEmbed from "$lib/components/ReviewsEmbed.svelte";
+    import Reviews from "$lib/components/Reviews.svelte";
     import Specialties from "$lib/components/Specialties.svelte";
     import BlogTable from "$lib/components/BlogTable.svelte";
-    import Packages from "$lib/components/Packages.svelte";
     import ContactForm from "$lib/components/ContactForm.svelte";
-    import LearnCallout from "$lib/components/LearnCallout.svelte";
 
     const articles = [
         {
@@ -90,12 +88,10 @@
 
 <div class="layout-container">
     <BlogCategories blogCategories={blogCateg} />
-    <ReviewsEmbed />
+    <Reviews />
     <Specialties />
     <BlogTable {articles} />
 
-    <Packages />
-    <LearnCallout />
     <ContactForm />
 </div>
 

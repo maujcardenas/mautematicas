@@ -4,7 +4,7 @@
 </script>
 
 <section id="servicios">
-    <h2>Listado de Servicios y Precios</h2>
+    <h2>Listado de todos los artículos del blog</h2>
     <div class="table-responsive">
         <table>
             <thead>
