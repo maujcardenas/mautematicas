@@ -5,7 +5,7 @@
             <div class="logo">
                 <a href="/" class="brand-link">
                     <img
-                        src="/images/brand/favicon.webp"
+                        src="/images/brand/logoMautematicas-darkbg-t.png"
                         alt="Logo Tu Sitio WP"
                         width="500"
                         height="500"
