@@ -84,9 +84,8 @@
     ];
 </script>
 
-<HeroSection />
-
 <div class="layout-container">
+    <HeroSection />
     <BlogCategories blogCategories={blogCateg} />
     <Reviews />
     <Specialties />

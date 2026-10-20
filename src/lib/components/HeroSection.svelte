@@ -16,26 +16,21 @@
         </p>
         <div class="hero-actions">
             <a href="#blog" class="btn">Artículos del Blog</a>
-            <a href="#blog" class="btn btn-dark">Clases Privadas</a>
-            <a href="#book-class" class="btn">Cursos Asincrónicos</a>
-            <a href="#book-class" class="btn btn-dark">Cursos en vivo</a>
+            <a href="#tutorias" class="btn">Clases Privadas</a>
+            <a href="#courses-self-paced" class="btn">Cursos Asincrónicos</a>
+            <a href="#courses-live" class="btn">Cursos en vivo</a>
         </div>
     </div>
 </section>
 
 <style>
     .hero {
-        /* background-image: url("/images/brand/banner.jpg"); */
-        /* background-size: cover; */
-        /* background-position: center; */
-        padding: 6rem 2rem;
-        /* text-align: center; */
-        /* background-color: #e0f2fe; */
+        padding: 6rem 0rem;
     }
 
     .hero-content {
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 1200px;
+        /* margin: 0 auto; */
         background: #f8fafc;
         padding: 2rem;
         border-radius: 12px;
