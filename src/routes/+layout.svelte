@@ -56,7 +56,7 @@
         border-radius: 4px;
     }
 
-    main {
+    :global(main) {
         padding-top: 70px; /*por el header fijo */
         min-height: calc(100vh - 200px);
     }
