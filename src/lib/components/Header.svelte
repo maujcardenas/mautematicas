@@ -183,7 +183,7 @@
     /* --- Fila Inferior (Navegación Principal) --- */
     .main-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         padding: 0.75rem 0;
         gap: 1rem;

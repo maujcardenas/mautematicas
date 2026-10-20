@@ -57,7 +57,7 @@
     }
 
     :global(main) {
-        padding-top: 70px; /*por el header fijo */
+        padding-top: 120px; /*por el header fijo */
         min-height: calc(100vh - 200px);
     }
 </style>

@@ -15,12 +15,12 @@
 
 <style>
     .hero {
-        background-image: url("/images/brand/banner.jpg");
-        background-size: cover;
-        background-position: center;
-        padding: 16rem 2rem;
+        /* background-image: url("/images/brand/banner.jpg"); */
+        /* background-size: cover; */
+        /* background-position: center; */
+        padding: 6rem 2rem;
         text-align: center;
-        background-color: #f8fafc;
+        background-color: #e0f2fe;
     }
 
     .hero-content {
@@ -29,7 +29,7 @@
         background: #f8fafc;
         padding: 2rem;
         border-radius: 12px;
-        border: 1px solid #2a2829;
+        /* border: 1px solid #2a2829; */
     }
 
     .hero-description {
