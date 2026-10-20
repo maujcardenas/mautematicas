@@ -16,8 +16,8 @@
         </p>
         <div class="hero-actions">
             <a href="#blog" class="btn">Artículos del Blog</a>
-            <a href="#blog" class="btn">Clases Privadas</a>
-            <a href="#book-class" class="btn btn-dark">Cursos Asincrónicos</a>
+            <a href="#blog" class="btn btn-dark">Clases Privadas</a>
+            <a href="#book-class" class="btn">Cursos Asincrónicos</a>
             <a href="#book-class" class="btn btn-dark">Cursos en vivo</a>
         </div>
     </div>
@@ -29,12 +29,12 @@
         /* background-size: cover; */
         /* background-position: center; */
         padding: 6rem 2rem;
-        text-align: center;
+        /* text-align: center; */
         /* background-color: #e0f2fe; */
     }
 
     .hero-content {
-        max-width: 600px;
+        max-width: 800px;
         margin: 0 auto;
         background: #f8fafc;
         padding: 2rem;
@@ -47,7 +47,10 @@
     }
 
     .hero-actions {
-        margin-top: 1rem;
+        display: grid;
+        /* Automatically switches between 2 columns and 1 column based on the 200px threshold */
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+        gap: 1rem;
     }
 
     .btn-dark {
