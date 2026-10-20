@@ -3,26 +3,25 @@
 	let testimonials = $state([
 		{
 			id: 1,
-			name: "María García",
-			role: "Estudiante de Programación",
-			comment:
-				"El curso superó mis expectativas. La explicación teórica combinada con ejercicios prácticos hizo que los conceptos complejos fueran fáciles de asimilar.",
+			name: "David M",
+			role: "Cálculo Multivariable",
+			comment: "Se las sabe todas y es super paciente",
 			rating: 5,
 		},
 		{
 			id: 2,
-			name: "Carlos Mendoza",
-			role: "Desarrollador Junior",
+			name: "Rubi Basantes",
+			role: "Cálculo I y II",
 			comment:
-				"Excelente metodología. La atención directa a las dudas durante las clases es el valor diferencial de esta formación.",
+				"Son unas clases excelentes, el profesor nos ayudó a entender a detalle muchos de los procesos matemáticos, tiene mucha paciencia, Muy recomendadas las clases",
 			rating: 5,
 		},
 		{
 			id: 3,
-			name: "Ana Lucía Torres",
-			role: "Estudiante de Ciencia de Datos",
+			name: "Ricardo Oña",
+			role: "Matematicas y Física",
 			comment:
-				"El material de estudio está actualizado y rigurosamente estructurado. Totalmente recomendable para quienes buscan bases sólidas.",
+				"Mauri es un profesor apasionado por lo que enseña, y esa pasión se nota en cada clase: la transmite con naturalidad y logra contagiarla a sus estudiantes. Su método es claro y sencillo, y lo adapta a las necesidades y al ritmo de cada alumno, lo que facilita el aprendizaje y hace que las clases se sientan cercanas y efectivas.",
 			rating: 5,
 		},
 	]);
@@ -70,8 +69,8 @@
 	}
 
 	.testimonial-card {
-		border: 1px solid #2a2829;
-		background-color: #e0f2fe;
+		/* border: 1px solid #2a2829; */
+		background-color: #f8fafc;
 		border-radius: 12px;
 		padding: 1.75rem;
 		display: flex;
@@ -103,7 +102,7 @@
 	}
 
 	.rating {
-		color: #e67e22;
+		color: #0c325a;
 		font-size: 1.1rem;
 		letter-spacing: 2px;
 		white-space: nowrap;

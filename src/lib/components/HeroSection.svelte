@@ -29,12 +29,11 @@
     }
 
     .hero-content {
-        max-width: 1200px;
+        max-width: 600px;
         /* margin: 0 auto; */
         background: #f8fafc;
         padding: 2rem;
         border-radius: 12px;
-        /* border: 1px solid #2a2829; */
     }
 
     .hero-description {
@@ -43,7 +42,6 @@
 
     .hero-actions {
         display: grid;
-        /* Automatically switches between 2 columns and 1 column based on the 200px threshold */
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
         gap: 1rem;
     }
