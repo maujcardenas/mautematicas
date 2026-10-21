@@ -75,7 +75,7 @@
 		padding: 1.75rem;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 	}
 

@@ -27,7 +27,7 @@
                     habilidades, aptitudes y objetivos
                 </li>
             </ul>
-            <button class="btn"> Agendar clase</button>
+            <button class="btn">Agendar clase</button>
         </div>
 
         <!-- Blog de aprendizaje o consejos matemáticos -->
@@ -58,7 +58,7 @@
                     para resolver problemas
                 </li>
             </ul>
-            <button class="btn"> Mirar Blog</button>
+            <button class="btn">Mirar Blog</button>
         </div>
 
         <!-- Cursos completos -->
@@ -67,7 +67,13 @@
             <p>Cursos en línea sobre distintas materias universitarias.</p>
             <ul class="feature-list">
                 <li>Por el momento están en construcción.</li>
+                <li>Serán cursos universitarios sobre:</li>
+                <li>Cálculo Diferencial e Integral</li>
+                <li>Cálculo Multivariable (III)</li>
+                <li>Ecuaciones Diferenciales</li>
+                <li>Álgebra Lineal</li>
             </ul>
+            <button class="btn">En contrucción</button>
         </div>
     </div>
 </section>
@@ -86,7 +92,6 @@
 
     .card {
         background-color: #f8fafc;
-        border: 1px solid #2a2829;
         border-radius: 12px;
         overflow: hidden;
         color: #ffffff;
@@ -96,6 +101,7 @@
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .card h3 {
