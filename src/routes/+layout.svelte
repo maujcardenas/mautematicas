@@ -12,12 +12,19 @@
 <Footer />
 
 <style>
+    :global(main) {
+        padding-top: 120px; /*por el header fijo */
+        min-height: calc(100vh - 200px);
+    }
     :global(body) {
         margin: 0;
         padding: 0;
         font-family: "Akt", sans-serif, system-ui;
         background-color: #ffffff;
         color: #2a2829;
+    }
+    :global(section) {
+        margin: 4rem 0;
     }
     :global(h1, h2, h3, h4) {
         color: #2a2829;
@@ -29,6 +36,11 @@
     :global(a) {
         color: #0c325a;
         text-decoration: none;
+    }
+    :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
     }
     :global(.btn) {
         display: inline-block;
@@ -42,22 +54,17 @@
         text-align: center;
     }
     :global(.btn:hover) {
-        opacity: 0.9;
+        opacity: 0.8;
     }
     :global(.section-title){
-        text-align: center;
+        /* text-align: center; */
         margin-bottom: 2rem;
         font-size: 1.75rem;
         color: #000000;
     }
-    :global(img) {
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
-    }
-
-    :global(main) {
-        padding-top: 120px; /*por el header fijo */
-        min-height: calc(100vh - 200px);
-    }
+    :global(.card) {
+        background-color: #f8fafc;
+        border-radius: 12px;
+        overflow: hidden;
+    }    
 </style>
