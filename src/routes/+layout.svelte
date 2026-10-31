@@ -57,14 +57,18 @@
         opacity: 0.8;
     }
     :global(.section-title){
-        /* text-align: center; */
         margin-bottom: 2rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: #000000;
     }
     :global(.card) {
         background-color: #f8fafc;
         border-radius: 12px;
         overflow: hidden;
-    }    
+    }
+    :global(.grid-2){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
 </style>

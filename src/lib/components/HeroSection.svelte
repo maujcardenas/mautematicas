@@ -1,52 +1,95 @@
 <script>
-    // Componente Hero Principal
 </script>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Mautematicas</h1>
-        <p class="hero-description">
-            Sitio creado por Mauricio Cárdenas, matemático y profesor. Puedes
-            agendar tutorías personalizadas, registrarte en mis cursos: unos son
-            asincrónicos auto-dirigidos (puedes comenzarlos cuando desees e ir a
-            tu ritmo), y otros sincrónico en-vivo (tienen un calendario
-            específico y nos reunimos a estudiar juntos), y/o leer artículos
-            sobre matemáticas universitarias, algunos son tutoriales o clases
-            otros son anécdotas y consejos. Bienvenido.
-        </p>
-        <div class="hero-actions">
-            <a href="#blog" class="btn">Artículos del Blog</a>
-            <a href="#tutorias" class="btn">Clases Privadas</a>
-            <a href="#courses-self-paced" class="btn">Cursos Asincrónicos</a>
-            <a href="#courses-live" class="btn">Cursos en vivo</a>
+    <div class="hero-grid">
+        <div class="hero-content">
+            <span class="hero-badge">Próximo Cohorte en Vivo: [Fecha]</span>
+            <h1>Dominio de Matemáticas Universitarias</h1>
+            <p>
+                Sitio creado por Mauricio Cárdenas, matemático y profesor.
+                Estudia matemáticas universitarias conmigo a través de clases en
+                vivo en grupos reducidos, o agenda tutorías personalizadas.
+                <em
+                    >¿Buscas cursos a tu propio ritmo? Únete a la lista de
+                    espera prioritaria.</em
+                >
+            </p>
+            <div class="hero-actions">
+                <a href="#courses-live" class="btn btn-primary"
+                    >Ver Cursos en Vivo</a
+                >
+                <a href="#waitlist" class="btn btn-secondary"
+                    >Lista de Espera (Asincrónicos)</a
+                >
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/brand/favicon.webp"
+                alt="Ilustración Mautematicas"
+            />
         </div>
     </div>
 </section>
 
 <style>
     .hero {
-        padding: 6rem 0rem;
+        padding: 4rem 0;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
     }
 
     .hero-content {
-        max-width: 600px;
-        /* margin: 0 auto; */
         background: #f8fafc;
-        padding: 2rem;
+        padding: 2.5rem;
         border-radius: 12px;
     }
 
-    .hero-description {
-        color: #2a2829;
+    .hero-content h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        margin-bottom: 2rem;
+        line-height: 1.6;
     }
 
     .hero-actions {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+        display: flex;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
-    .btn-dark {
-        background-color: #2a2829;
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Order ensures image is first on mobile, second on desktop */
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Desktop View: 2/3 (content) and 1/3 (image) */
+    @media (min-width: 768px) {
+        .hero-grid {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .hero-image {
+            order: 0; /* Resets order back to right column on desktop */
+        }
     }
 </style>

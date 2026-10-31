@@ -65,7 +65,9 @@
         {#each Subjects as subject (subject.title)}
             <div class="card">
                 <img src={subject.image} alt={subject.alt} />
-                <p>{subject.description}</p>
+                <div class="card-body">
+                    <p>{subject.description}</p>
+                </div>
             </div>
         {/each}
     </div>
@@ -76,5 +78,8 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
+    }
+    .card-body {
+        padding: 1.5rem;
     }
 </style>
