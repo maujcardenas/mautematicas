@@ -1,33 +1,26 @@
 <script>
+    //Hero Component
 </script>
 
 <section>
     <div class="hero-grid">
         <div class="hero-content">
             <span class="hero-badge">
-                Próximo Curso Presencial:
+                Próximos Cursos Presenciales:
                 <span class="pill"> 5 Enero, 2027 </span>
+                <span class="pill"> Quito, Ecuador </span>
             </span>
             <h1>Mautematicas</h1>
             <p>
-                Sitiso creado por mi, Mauricio Cárdenas, matemático y profesor.
+                Website creado por mi, Mauricio Cárdenas, matemático y profesor.
             </p>
             <p>
-                Tengo muchísimos años de experiencia y cientos de estudiantes a
-                los que he podido ayudar con sus materias matemáticas.
-            </p>
-            <p>
-                En este sitio puedes unirte a nuestros cursos grupales
-                presenciales para Quito, Ecuador.
-            </p>
-            <p>
-                Para cualquier lector del mundo, puedes encontrar articulos
-                educativos, recreativos, interesantes sobre matemáticas
-                generales.
+                Muchos años de experiencia y cientos de estudiantes a los que he
+                podido ayudar con sus materias matemáticas.
             </p>
             <p>
                 Registrate a nuestros próximos cursos de materias
-                universitarias.
+                universitarias. O lee el blog.
             </p>
 
             <div class="hero-actions">
@@ -60,16 +53,6 @@
         padding: 1.5rem;
         border-radius: 12px;
     }
-
-    /* .hero-content h1 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-
-    .hero-content p {
-        margin-bottom: 2rem;
-        line-height: 1.6;
-    } */
 
     .hero-actions {
         display: flex;

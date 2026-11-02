@@ -2,7 +2,7 @@
     import HeroSection from "$lib/components/HeroSection.svelte";
     import Subjects from "$lib/components/Subjects.svelte";
     import Reviews from "$lib/components/Reviews.svelte";
-    import Specialties from "$lib/components/Specialties.svelte";
+    import Services from "$lib/components/Services.svelte";
     import BlogTable from "$lib/components/BlogTable.svelte";
     import ContactForm from "$lib/components/ContactForm.svelte";
 
@@ -29,7 +29,7 @@
     <HeroSection />
     <Subjects />
     <Reviews />
-    <Specialties />
+    <Services />
     <BlogTable {articles} />
     <ContactForm />
 </div>
