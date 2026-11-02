@@ -2,25 +2,25 @@
 	let testimonials = $state([
 		{
 			id: 1,
+			name: "Ricardo Oña",
+			role: "Matematicas y Física",
+			comment:
+				"Mauri es un profesor apasionado por lo que enseña, y esa pasión se nota en cada clase: la transmite con naturalidad y logra contagiarla a sus estudiantes. Su método es claro y sencillo, y lo adapta a las necesidades y al ritmo de cada alumno, lo que facilita el aprendizaje y hace que las clases se sientan cercanas y efectivas.",
+			rating: 5,
+		},
+		{
+			id: 2,
 			name: "David M",
 			role: "Cálculo Multivariable",
 			comment: "Se las sabe todas y es super paciente",
 			rating: 5,
 		},
 		{
-			id: 2,
+			id: 3,
 			name: "Rubi Basantes",
 			role: "Cálculo I y II",
 			comment:
 				"Son unas clases excelentes, el profesor nos ayudó a entender a detalle muchos de los procesos matemáticos, tiene mucha paciencia, Muy recomendadas las clases",
-			rating: 5,
-		},
-		{
-			id: 3,
-			name: "Ricardo Oña",
-			role: "Matematicas y Física",
-			comment:
-				"Mauri es un profesor apasionado por lo que enseña, y esa pasión se nota en cada clase: la transmite con naturalidad y logra contagiarla a sus estudiantes. Su método es claro y sencillo, y lo adapta a las necesidades y al ritmo de cada alumno, lo que facilita el aprendizaje y hace que las clases se sientan cercanas y efectivas.",
 			rating: 5,
 		},
 	]);
@@ -94,9 +94,5 @@
 		padding: 0;
 		font-style: italic;
 		line-height: 1.5;
-	}
-
-	.comment p {
-		margin: 0;
 	}
 </style>
