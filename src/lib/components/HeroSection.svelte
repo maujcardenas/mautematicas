@@ -1,31 +1,40 @@
 <script>
 </script>
 
-<section class="hero">
+<section>
     <div class="hero-grid">
         <div class="hero-content">
-            <span class="hero-badge"
-                >Próximo Cohorte para clases en Vivo: 5 Enero 2027</span
-            >
+            <span class="hero-badge">
+                Próximo Curso Presencial:
+                <span class="pill"> 5 Enero, 2027 </span>
+            </span>
             <h1>Mautematicas</h1>
             <p>
-                Sitio creado por mi, Mauricio Cárdenas, matemático y profesor.
-                Tengo muchos años de experiencia y cientos de estudiantes a los
-                que he podido ayudar con matemáticas. En este sitio puedes
-                unirte a nuestros cursos grupales en vivo, y también leer lindos
-                y educativos articulos del blog.
-                <em>
-                    Registrate a nuestros próximos cursos de materias
-                    universitarias.
-                </em>
+                Sitiso creado por mi, Mauricio Cárdenas, matemático y profesor.
             </p>
+            <p>
+                Tengo muchísimos años de experiencia y cientos de estudiantes a
+                los que he podido ayudar con sus materias matemáticas.
+            </p>
+            <p>
+                En este sitio puedes unirte a nuestros cursos grupales
+                presenciales para Quito, Ecuador.
+            </p>
+            <p>
+                Para cualquier lector del mundo, puedes encontrar articulos
+                educativos, recreativos, interesantes sobre matemáticas
+                generales.
+            </p>
+            <p>
+                Registrate a nuestros próximos cursos de materias
+                universitarias.
+            </p>
+
             <div class="hero-actions">
-                <a href="#courses" class="btn btn-primary"
-                    >Cursos Universitarios Grupales</a
+                <a href="#courses" class="btn"
+                    >Cursos Universitarios Presenciales</a
                 >
-                <a href="#blog" class="btn btn-secondary"
-                    >Artículos Educativos</a
-                >
+                <a href="#blog" class="btn">Artículos Educativos Blog</a>
             </div>
         </div>
 
@@ -39,10 +48,6 @@
 </section>
 
 <style>
-    .hero {
-        padding: 4rem 0;
-    }
-
     .hero-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -52,7 +57,7 @@
 
     .hero-content {
         background: #f8fafc;
-        padding: 2.5rem;
+        padding: 1.5rem;
         border-radius: 12px;
     }
 

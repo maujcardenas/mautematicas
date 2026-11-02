@@ -1,5 +1,4 @@
 <script>
-	// Arreglo de testimonios con estado reactivo (Svelte 5)
 	let testimonials = $state([
 		{
 			id: 1,
@@ -27,12 +26,11 @@
 	]);
 </script>
 
-<section class="testimonials-container">
+<section>
 	<h2 class="section-title">Testimonios de estudiantes</h2>
-
 	<div class="grid-2">
 		{#each testimonials as item (item.id)}
-			<article class="testimonial-card">
+			<article class="testimonial-card card">
 				<header class="card-header">
 					<div class="author-info">
 						<h3>{item.name}</h3>
@@ -55,28 +53,11 @@
 </section>
 
 <style>
-	.testimonials-container {
-		width: 100%;
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 2rem 1rem;
-	}
-
-	.grid-2 {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
-	}
-
 	.testimonial-card {
-		/* border: 1px solid #2a2829; */
-		background-color: #f8fafc;
-		border-radius: 12px;
-		padding: 1.75rem;
+		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 	}
 
 	.card-header {
@@ -96,7 +77,7 @@
 
 	.role {
 		font-size: 0.85rem;
-		color: #666;
+		color: #0c325a;
 		display: block;
 		margin-top: 0.25rem;
 	}
@@ -112,7 +93,6 @@
 		margin: 0;
 		padding: 0;
 		font-style: italic;
-		color: #333;
 		line-height: 1.5;
 	}
 
