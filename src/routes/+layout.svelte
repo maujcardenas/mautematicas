@@ -54,7 +54,9 @@
         text-align: center;
     }
     :global(.btn:hover) {
-        opacity: 0.8;
+        /* opacity: 0.8; */
+        background-color: #000000;
+        color: #E0F2FE;
     }
     :global(.section-title){
         margin-bottom: 2rem;
@@ -70,5 +72,15 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
+    }
+    :global(.pill) {
+        background-color: #e0f2fe;
+        color: #0C325A;
+        padding: 0.25rem 0.6rem;
+        border-radius: 9999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 </style>

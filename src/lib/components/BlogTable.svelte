@@ -18,7 +18,7 @@
                 {#each articles as s}
                     <tr>
                         <td class="font-medium">{s.title}</td>
-                        <td><span class="badge">{s.category}</span></td>
+                        <td><span class="pill">{s.category}</span></td>
                         <td class="leer-mas-td">Leer mas</td>
                     </tr>
                 {/each}
@@ -70,16 +70,5 @@
     .leer-mas-td {
         font-weight: 600;
         color: #0284c7;
-    }
-
-    .badge {
-        background-color: #e0f2fe;
-        color: #0369a1;
-        padding: 0.25rem 0.6rem;
-        border-radius: 9999px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
     }
 </style>

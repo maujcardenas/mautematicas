@@ -4,23 +4,27 @@
 <section class="hero">
     <div class="hero-grid">
         <div class="hero-content">
-            <span class="hero-badge">Próximo Cohorte en Vivo: [Fecha]</span>
-            <h1>Dominio de Matemáticas Universitarias</h1>
+            <span class="hero-badge"
+                >Próximo Cohorte para clases en Vivo: 5 Enero 2027</span
+            >
+            <h1>Mautematicas</h1>
             <p>
-                Sitio creado por Mauricio Cárdenas, matemático y profesor.
-                Estudia matemáticas universitarias conmigo a través de clases en
-                vivo en grupos reducidos, o agenda tutorías personalizadas.
-                <em
-                    >¿Buscas cursos a tu propio ritmo? Únete a la lista de
-                    espera prioritaria.</em
-                >
+                Sitio creado por mi, Mauricio Cárdenas, matemático y profesor.
+                Tengo muchos años de experiencia y cientos de estudiantes a los
+                que he podido ayudar con matemáticas. En este sitio puedes
+                unirte a nuestros cursos grupales en vivo, y también leer lindos
+                y educativos articulos del blog.
+                <em>
+                    Registrate a nuestros próximos cursos de materias
+                    universitarias.
+                </em>
             </p>
             <div class="hero-actions">
-                <a href="#courses-live" class="btn btn-primary"
-                    >Ver Cursos en Vivo</a
+                <a href="#courses" class="btn btn-primary"
+                    >Cursos Universitarios Grupales</a
                 >
-                <a href="#waitlist" class="btn btn-secondary"
-                    >Lista de Espera (Asincrónicos)</a
+                <a href="#blog" class="btn btn-secondary"
+                    >Artículos Educativos</a
                 >
             </div>
         </div>
@@ -52,7 +56,7 @@
         border-radius: 12px;
     }
 
-    .hero-content h1 {
+    /* .hero-content h1 {
         margin-top: 0;
         margin-bottom: 1rem;
     }
@@ -60,7 +64,7 @@
     .hero-content p {
         margin-bottom: 2rem;
         line-height: 1.6;
-    }
+    } */
 
     .hero-actions {
         display: flex;
@@ -72,13 +76,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* Order ensures image is first on mobile, second on desktop */
-        order: -1;
     }
 
     .hero-image img {
         max-width: 100%;
-        height: auto;
+        max-height: 200px;
         object-fit: contain;
     }
 
@@ -86,10 +88,6 @@
     @media (min-width: 768px) {
         .hero-grid {
             grid-template-columns: 2fr 1fr;
-        }
-
-        .hero-image {
-            order: 0; /* Resets order back to right column on desktop */
         }
     }
 </style>
