@@ -26,54 +26,56 @@
     );
 </script>
 
-<section class="layout-container">
-    <h2 class="section-title">Blog</h2>
+<div class="layout-container">
+    <section>
+        <h2 class="section-title">Blog</h2>
 
-    <div class="search-and-filter card">
-        <h3>Búsqueda por texto:</h3>
-        <input
-            type="text"
-            placeholder="Buscar palabras clave..."
-            bind:value={searchQuery}
-            class="input-field"
-        />
+        <div class="search-and-filter card">
+            <h3>Búsqueda por texto:</h3>
+            <input
+                type="text"
+                placeholder="Buscar palabras clave..."
+                bind:value={searchQuery}
+                class="input-field"
+            />
 
-        <div class="categories-selector">
-            <h3>Filtra por Categoría:</h3>
-            {#each categories as cat}
-                <button
-                    type="button"
-                    class="pill {selectedCategory === cat ? 'active' : ''}"
-                    onclick={() => (selectedCategory = cat)}
-                >
-                    {cat}
-                </button>
+            <div class="categories-selector">
+                <h3>Filtra por Categoría:</h3>
+                {#each categories as cat}
+                    <button
+                        type="button"
+                        class="pill {selectedCategory === cat ? 'active' : ''}"
+                        onclick={() => (selectedCategory = cat)}
+                    >
+                        {cat}
+                    </button>
+                {/each}
+            </div>
+        </div>
+
+        <div class="grid-2">
+            {#each filteredPosts as post}
+                <a href={`/blog/${post.slug}`} class="card card-link">
+                    <img src={post.image} alt={post.title} />
+                    <div class="card-body">
+                        <div class="pill">
+                            {post.category}
+                        </div>
+                        <div class="pill">
+                            {post.date}
+                        </div>
+                        <h3 class="post-title">
+                            {post.title}
+                        </h3>
+                        <p class="post-description">
+                            {post.description}
+                        </p>
+                    </div>
+                </a>
             {/each}
         </div>
-    </div>
-
-    <div class="grid-2">
-        {#each filteredPosts as post}
-            <a href={`/blog/${post.slug}`} class="card card-link">
-                <img src={post.image} alt={post.title} />
-                <div class="card-body">
-                    <div class="pill">
-                        {post.category}
-                    </div>
-                    <div class="pill">
-                        {post.date}
-                    </div>
-                    <h3 class="post-title">
-                        {post.title}
-                    </h3>
-                    <p class="post-description">
-                        {post.description}
-                    </p>
-                </div>
-            </a>
-        {/each}
-    </div>
-</section>
+    </section>
+</div>
 
 <style>
     .layout-container {
@@ -86,6 +88,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin-bottom: 4rem;
     }
 
     .input-field {
@@ -96,7 +99,7 @@
         border-radius: 4px;
     }
     .pill {
-        margin-top: 0.25rem;
+        margin: 0.25rem 0rem 0.25rem 0.25rem;
     }
     .active {
         background-color: #000000;
