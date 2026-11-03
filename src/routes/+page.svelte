@@ -6,23 +6,8 @@
     import BlogTable from "$lib/components/BlogTable.svelte";
     import ContactForm from "$lib/components/ContactForm.svelte";
 
-    const articles = [
-        {
-            id: "dom",
-            title: "Ser malo en mate es un mito",
-            category: "Consejos",
-        },
-        {
-            id: "h6",
-            title: "Los logaritmos son una tecnología del diablo",
-            category: "anual",
-        },
-        {
-            id: "h10",
-            title: "La prueba de sin(x)/x hacia 1",
-            category: "Cálculo Diferencial e Integral",
-        },
-    ];
+    let { data } = $props();
+    let articles = $derived(data.recentPosts);
 </script>
 
 <div class="layout-container">

@@ -82,12 +82,10 @@
 
     .feature-list {
         margin-top: 1rem;
-        padding-left: 1.2rem;
-        color: #2a2829;
+        padding-left: 0rem;
     }
 
-    /* .feature-list li {
-        margin-bottom: 0.5rem;
-        line-height: 1.3;
-    } */
+    .feature-list li {
+        margin: 0.5rem 0rem;
+    }
 </style>

@@ -1,5 +1,4 @@
 <script>
-    // Sintaxis moderna de Svelte 5
     let { articles = [] } = $props();
 </script>
 
@@ -19,7 +18,6 @@
                     <tr>
                         <td class="font-medium">{s.title}</td>
                         <td><span class="pill">{s.category}</span></td>
-                        <td class="leer-mas-td">Leer mas</td>
                     </tr>
                 {/each}
             </tbody>

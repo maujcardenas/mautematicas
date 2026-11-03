@@ -24,10 +24,12 @@
             </p>
 
             <div class="hero-actions">
-                <a href="#courses" class="btn"
+                <a href="https://mautematicas.com/courses" class="btn"
                     >Cursos Universitarios Presenciales</a
                 >
-                <a href="#blog" class="btn">Artículos Educativos Blog</a>
+                <a href="https://mautematicas.com/blog" class="btn"
+                    >Artículos Educativos Blog</a
+                >
             </div>
         </div>
 

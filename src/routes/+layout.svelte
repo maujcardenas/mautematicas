@@ -24,7 +24,7 @@
         color: #2a2829;
     }
     :global(section) {
-        margin: 6rem 0;
+        margin: 10rem 0;
     }
     :global(h1, h2, h3, h4) {
         color: #2a2829;
