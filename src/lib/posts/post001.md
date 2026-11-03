@@ -1,6 +1,6 @@
 ---
-title: "6 segundos que me permitieron cambiar mi vida"
-description: "Cómo un pensamiento de esforzarme me permitió ganar una excelente beca para estudiar matemáticas"
+title: "Si vale la pena esforzarse de vez en cuando. ¿Cómo gane una beca?"
+description: "Cómo un pensamiento de esforzarme me permitió ganar una excelente beca para estudiar la carrera de matemáticas"
 date: "2025-04-05"
 category: "Anécdotas"
 image: "https://via.placeholder.com/800x400"

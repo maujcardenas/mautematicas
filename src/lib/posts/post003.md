@@ -1,8 +1,8 @@
 ---
-title: "Los irracionales, ¿Que chch es eso?"
+title: "Los irracionales, ¿Que ----- es eso?"
 description: "Los números irracionales son realmente unos pillines"
 date: "2025-04-05"
-category: "Anécdotas"
+category: "Matemáticas Recreativas"
 image: "https://via.placeholder.com/800x400"
 ---
 

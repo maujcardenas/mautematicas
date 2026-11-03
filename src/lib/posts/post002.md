@@ -2,7 +2,7 @@
 title: "¿A qué se dedica un matemático?"
 description: "Qué mismo hacen los matemáticos de hoy en día"
 date: "2025-04-05"
-category: "Anécdotas"
+category: "Curiosidades"
 image: "https://via.placeholder.com/800x400"
 ---
 

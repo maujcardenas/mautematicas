@@ -27,7 +27,7 @@
 </script>
 
 <div class="layout-container main-layout">
-    <h1>Educación y Aprendizaje</h1>
+    <h1>Blog</h1>
 
     <div class="filters card card-body filters-container">
         <input
@@ -36,20 +36,27 @@
             bind:value={searchQuery}
             class="input-field search-input"
         />
-        <select bind:value={selectedCategory} class="input-field select-input">
+
+        <div class="categories-container">
             {#each categories as cat}
-                <option value={cat}>{cat}</option>
+                <button
+                    type="button"
+                    class="pill {selectedCategory === cat ? 'active' : ''}"
+                    onclick={() => (selectedCategory = cat)}
+                >
+                    {cat}
+                </button>
             {/each}
-        </select>
+        </div>
     </div>
 
-    <div class="grid-3">
+    <div class="grid-2">
         {#each filteredPosts as post}
             <a href={`/blog/${post.slug}`} class="card card-link">
                 <img src={post.image} alt={post.title} />
                 <div class="card-body">
-                    <span class="post-metadata">
-                        {post.category} - {post.date}
+                    <span class="pill">
+                        {post.category} | {post.date}
                     </span>
                     <h3 class="post-title">
                         {post.title}
@@ -94,11 +101,6 @@
         text-decoration: none;
     }
 
-    .post-metadata {
-        font-size: 0.8rem;
-        color: #0c325a;
-    }
-
     .post-title {
         color: #000000;
         margin: 0.5rem 0;
@@ -107,25 +109,6 @@
     .post-description {
         color: #2a2829;
         font-size: 0.9rem;
-    }
-
-    .grid-3 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-bottom: 4rem;
-    }
-
-    .card {
-        background-color: #e0f2fe;
-        border: 1px solid #2a2829;
-        border-radius: 12px;
-        overflow: hidden;
-        display: block;
-    }
-
-    .card:hover {
-        border-color: #f8fafc;
     }
 
     .card-body {
