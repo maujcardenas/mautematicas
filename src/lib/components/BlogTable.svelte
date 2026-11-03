@@ -1,5 +1,8 @@
 <script>
     let { articles = [] } = $props();
+    function navigateToPost(slug) {
+        window.location.href = `/blog/${slug}`;
+    }
 </script>
 
 <section>
@@ -14,12 +17,13 @@
             </thead>
             <tbody>
                 {#each articles as post}
-                    <a href={`/blog/${post.slug}`}>
-                        <tr>
-                            <td class="font-medium">{post.title}</td>
-                            <td><span class="pill">{post.category}</span></td>
-                        </tr>
-                    </a>
+                    <tr
+                        class="clickable-row"
+                        onclick={() => navigateToPost(post.slug)}
+                    >
+                        <td class="font-medium">{post.title}</td>
+                        <td><span class="pill">{post.category}</span></td>
+                    </tr>
                 {/each}
             </tbody>
         </table>
@@ -33,6 +37,9 @@
         border-radius: 12px;
         box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
         /* margin-bottom: 3rem; */
+    }
+    .clickable-row {
+        cursor: pointer;
     }
 
     table {
