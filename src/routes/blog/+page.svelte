@@ -26,18 +26,20 @@
     );
 </script>
 
-<div class="layout-container main-layout">
-    <h1>Blog</h1>
+<section>
+    <h2 class="section-title">Blog</h2>
 
-    <div class="filters card card-body filters-container">
+    <div class="search-and-filter card">
+        <h3>Búsqueda por texto:</h3>
         <input
             type="text"
             placeholder="Buscar palabras clave..."
             bind:value={searchQuery}
-            class="input-field search-input"
+            class="input-field"
         />
 
-        <div class="categories-container">
+        <div class="categories-selector">
+            <h3>Filtra por Categoría:</h3>
             {#each categories as cat}
                 <button
                     type="button"
@@ -55,9 +57,12 @@
             <a href={`/blog/${post.slug}`} class="card card-link">
                 <img src={post.image} alt={post.title} />
                 <div class="card-body">
-                    <span class="pill">
-                        {post.category} | {post.date}
-                    </span>
+                    <div class="pill">
+                        {post.category}
+                    </div>
+                    <div class="pill">
+                        {post.date}
+                    </div>
                     <h3 class="post-title">
                         {post.title}
                     </h3>
@@ -68,33 +73,25 @@
             </a>
         {/each}
     </div>
-</div>
+</section>
 
 <style>
-    .layout-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
-
-    .main-layout {
-        padding-top: 2rem;
-    }
-
-    .filters-container {
-        margin-bottom: 2rem;
+    .search-and-filter {
         display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    .search-input {
+    .input-field {
         flex: 1;
         min-width: 200px;
+        padding: 0.5rem;
+        border: 1px solid #2a2829;
+        border-radius: 4px;
     }
-
-    .select-input {
-        width: auto;
+    .active {
+        background-color: #000000;
+        color: E0F2FE;
     }
 
     .card-link {
@@ -113,11 +110,5 @@
 
     .card-body {
         padding: 1.5rem;
-    }
-
-    .input-field {
-        padding: 0.5rem;
-        border: 1px solid #71717a;
-        border-radius: 4px;
     }
 </style>
