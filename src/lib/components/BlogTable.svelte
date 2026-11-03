@@ -2,23 +2,24 @@
     let { articles = [] } = $props();
 </script>
 
-<section id="servicios">
-    <h2 class="section-title">Listado de todos los artículos del blog</h2>
+<section>
+    <h2 class="section-title">Artículos recientes del Blog</h2>
     <div class="table-responsive">
         <table>
             <thead>
                 <tr>
                     <th>Título</th>
                     <th>Categoría</th>
-                    <th>CTA</th>
                 </tr>
             </thead>
             <tbody>
-                {#each articles as s}
-                    <tr>
-                        <td class="font-medium">{s.title}</td>
-                        <td><span class="pill">{s.category}</span></td>
-                    </tr>
+                {#each articles as post}
+                    <a href={`/blog/${post.slug}`}>
+                        <tr>
+                            <td class="font-medium">{post.title}</td>
+                            <td><span class="pill">{post.category}</span></td>
+                        </tr>
+                    </a>
                 {/each}
             </tbody>
         </table>
@@ -26,25 +27,19 @@
 </section>
 
 <style>
-    /* Estilos generales y Tabla (Modo claro/neutro para legibilidad) */
-    #servicios h2 {
-        color: #1e293b;
-        margin-bottom: 1.5rem;
-    }
-
     .table-responsive {
         overflow-x: auto;
         border: 1px solid #e2e8f0;
-        border-radius: 8px;
+        border-radius: 12px;
         box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
         background-color: #ffffff;
-        color: #334155;
+        /* color: #334155; */
     }
 
     th,
@@ -56,17 +51,5 @@
 
     th {
         background-color: #f8fafc;
-        color: #0f172a;
-        font-weight: 600;
-    }
-
-    .font-medium {
-        font-weight: 500;
-        color: #0f172a;
-    }
-
-    .leer-mas-td {
-        font-weight: 600;
-        color: #0284c7;
     }
 </style>

@@ -83,6 +83,7 @@
     .feature-list {
         margin-top: 1rem;
         padding-left: 0rem;
+        list-style-type: none;
     }
 
     .feature-list li {
