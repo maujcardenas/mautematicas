@@ -26,7 +26,7 @@
     );
 </script>
 
-<section>
+<section class="layout-container">
     <h2 class="section-title">Blog</h2>
 
     <div class="search-and-filter card">
@@ -76,6 +76,12 @@
 </section>
 
 <style>
+    .layout-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
     .search-and-filter {
         display: flex;
         flex-direction: column;
@@ -89,9 +95,12 @@
         border: 1px solid #2a2829;
         border-radius: 4px;
     }
+    .pill {
+        margin-top: 0.25rem;
+    }
     .active {
         background-color: #000000;
-        color: E0F2FE;
+        color: #e0f2fe;
     }
 
     .card-link {
