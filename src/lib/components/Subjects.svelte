@@ -65,9 +65,9 @@
         {#each Subjects as subject (subject.title)}
             <div class="card">
                 <img src={subject.image} alt={subject.alt} />
-                <div class="card-body">
+                <!-- <div class="card-body">
                     <p>{subject.description}</p>
-                </div>
+                </div> -->
             </div>
         {/each}
     </div>

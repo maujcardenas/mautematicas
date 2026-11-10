@@ -50,13 +50,13 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        font-weight: bold;
+        /* font-weight: bold; */
         text-align: center;
     }
     :global(.btn:hover) {
         /* opacity: 0.8; */
         background-color: #000000;
-        color: #E0F2FE;
+        /* color: #E0F2FE; */
     }
     :global(.section-title){
         margin-bottom: 2.5rem;
@@ -76,11 +76,9 @@
     :global(.pill) {
         background-color: #e0f2fe;
         color: #0C325A;
-        padding: 0.25rem 0.6rem;
-        border-radius: 9999px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+        padding: 0.5rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 800;
     }
 </style>

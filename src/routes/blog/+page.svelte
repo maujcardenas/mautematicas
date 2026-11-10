@@ -88,6 +88,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding: 1.5rem;
         margin-bottom: 4rem;
     }
 
