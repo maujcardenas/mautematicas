@@ -19,7 +19,7 @@
     :global(body) {
         margin: 0;
         padding: 0;
-        font-family: "Akt", sans-serif, system-ui;
+        font-family: "DM Sans", sans-serif;
         background-color: #ffffff;
         color: #2a2829;
     }
