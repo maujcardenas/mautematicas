@@ -42,6 +42,16 @@
         height: auto;
         border-radius: 12px;
     }
+    :global(.layout-container){
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    :global(.text-accent) {
+        font-weight: bold;
+        color: #ff7a00; /* Replace with your preferred orange shade */
+        flex: 0 0 100%; /* Forces it to take up the full width (new row) on mobile */
+    }
     :global(.btn) {
         display: inline-block;
         background-color: #0c325a;

@@ -1,12 +1,10 @@
 <script>
 </script>
 
-<section>
+<div class="layout-container">
     <section class="hero-section">
-        <div class="container">
-            <span class="pill text-accent"
-                >Modalidad 1 a 1 y Grupos Reducidos</span
-            >
+        <div class="card card-start">
+            <span class="text-accent">Modalidad 1 a 1 y Grupos Reducidos</span>
             <h1>Clases y Tutorías de Matemáticas en Quito y Online</h1>
             <p>
                 Servicio especializado de tutorías de matemáticas para
@@ -20,13 +18,13 @@
     <!-- Subjects Section -->
     <section class="subjects-section">
         <div class="container">
-            <h2>Áreas de Estudio y Materias</h2>
+            <h2 class="section-title">Áreas de Estudio y Materias</h2>
             <p>
                 Formación académica integral abarcando desde educación básica
                 hasta investigación científica avanzada.
             </p>
 
-            <div class="cards-grid">
+            <div class="grid-2">
                 <div class="card">
                     <h3>Matemáticas Escolares y Bachillerato</h3>
                     <p>
@@ -76,7 +74,7 @@
                 clase en formato PDF.
             </p>
 
-            <div class="cards-grid">
+            <div class="grid-2">
                 <div class="card">
                     <h3>Individual (1 a 1)</h3>
                     <p class="text-accent">15 / hora por persona</p>
@@ -121,7 +119,7 @@
         <div class="container">
             <h2>Metodología y Pagos</h2>
 
-            <div class="cards-grid">
+            <div class="grid-2">
                 <div class="card">
                     <h3>¿Cómo trabajamos?</h3>
                     <p>
@@ -162,7 +160,7 @@
             >
         </div>
     </section>
-</section>
+</div>
 
 <style>
 </style>

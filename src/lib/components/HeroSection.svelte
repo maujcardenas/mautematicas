@@ -45,12 +45,6 @@
         gap: 8px; /* Adjust spacing between elements as needed */
     }
 
-    .text-accent {
-        font-weight: bold;
-        color: #ff7a00; /* Replace with your preferred orange shade */
-        flex: 0 0 100%; /* Forces it to take up the full width (new row) on mobile */
-    }
-
     .hero-grid {
         display: grid;
         grid-template-columns: 1fr;
