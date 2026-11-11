@@ -26,8 +26,8 @@
 	]);
 </script>
 
-<section>
-	<h2 class="section-title" id="testimonios">Testimonios de estudiantes</h2>
+<section id="testimonios">
+	<h2 class="section-title">Testimonios de estudiantes</h2>
 	<div class="grid-2">
 		{#each testimonials as item (item.id)}
 			<article class="card card-start">

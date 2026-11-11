@@ -43,8 +43,8 @@
     ]);
 </script>
 
-<section>
-    <h2 class="section-title" id="materias">Materias</h2>
+<section id="materias">
+    <h2 class="section-title">Materias</h2>
     <div class="grid-2">
         {#each Subjects as subject (subject.title)}
             <!-- <div class="card"> -->

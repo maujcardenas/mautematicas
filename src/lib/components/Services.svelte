@@ -44,8 +44,8 @@
     ];
 </script>
 
-<section>
-    <h2 class="section-title" id="servicios">Servicios</h2>
+<section id="servicios">
+    <h2 class="section-title">Servicios</h2>
     <div class="grid-2">
         {#each servicios as servicio}
             <article class="card card-between">

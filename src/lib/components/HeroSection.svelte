@@ -11,19 +11,19 @@
                 <span class="pill"> Quito, Ecuador </span>
             </span>
             <h1>Mautematicas</h1>
-            <p>Website Mauricio Cárdenas, matemático y profesor.</p>
             <p>
-                Tengo muchos años de experiencia enseñando a cientos de
-                estudiantes a los que he podido ayudar con sus materias
-                matemáticas a todo nivel.
+                Sitio web creado por Mauricio Cárdenas, matemático y profesor.
+            </p>
+            <p>
+                Tengo años de experiencia enseñando a cientos de estudiantes de
+                todo nivel: básico-bachillerato, universitario y post
+                universitario.
             </p>
             <p>Registrate a nuestros cursos presenciales. O visita el Blog.</p>
 
             <div class="hero-actions">
-                <a href="https://mautematicas.com/courses" class="btn"
-                    >Cursos Universitarios</a
-                >
-                <a href="https://mautematicas.com/blog" class="btn">Blog</a>
+                <a href="/courses" class="btn">Cursos Universitarios</a>
+                <a href="/blog" class="btn">Blog</a>
             </div>
         </div>
 

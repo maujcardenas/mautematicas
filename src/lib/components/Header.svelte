@@ -74,8 +74,8 @@
                 <a href="/#materias">Materias</a>
                 <a href="/#testimonios">Testimonios</a>
                 <a href="/#servicios">Servicios</a>
-                <a href="/tutorias">Servicios</a>
-                <a href="/cursos">Servicios</a>
+                <a href="/tutorias">Tutorías</a>
+                <a href="/cursos">Cursos</a>
                 <a href="/blog">Blog</a>
                 <a href="/#contacto">Contacto</a>
             </nav>

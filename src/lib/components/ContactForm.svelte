@@ -2,10 +2,15 @@
     // Componente de contacto
 </script>
 
-<section>
-    <h2 class="section-title" id="contacto">Contacto</h2>
+<section id="contacto">
+    <h2 class="section-title">Contacto</h2>
     <div class="grid-2">
         <div class="card card-start">
+            <p>
+                Escríbeme cualquier pregunta, comentario o necesidad. Respondo
+                relativamente rápido (y contento) estos mensajes (menos de 24
+                horas):
+            </p>
             <form>
                 <div class="form-group">
                     <label class="form-label" for="nombre">Nombre</label>
@@ -60,7 +65,7 @@
         padding: 0.5rem;
         border: 1px solid #2a2829;
         border-radius: 4px;
-        background-color: #f8fafc;
+        background-color: #ffffff;
         color: #2a2829;
         box-sizing: border-box;
     }
