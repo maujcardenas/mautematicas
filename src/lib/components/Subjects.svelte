@@ -75,6 +75,6 @@
 
 <style>
     .card-body {
-        padding: 1.5rem;
+        padding: 3rem;
     }
 </style>

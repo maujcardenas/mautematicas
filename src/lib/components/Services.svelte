@@ -68,7 +68,7 @@
 
 <style>
     .card-body {
-        padding: 1.5rem;
+        padding: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
