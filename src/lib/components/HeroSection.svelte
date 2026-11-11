@@ -5,11 +5,12 @@
 <section>
     <div class="hero-grid">
         <div class="hero-content">
-            <span class="hero-badge">
-                Próximos Cursos Presenciales:
+            <div class="hero-badge">
+                <span class="text-accent"> Próximos Cursos Presenciales:</span>
                 <span class="pill"> 5 Enero, 2027 </span>
                 <span class="pill"> Quito, Ecuador </span>
-            </span>
+            </div>
+
             <h1>Mautematicas</h1>
             <p>
                 Sitio web creado por Mauricio Cárdenas, matemático y profesor.
@@ -37,6 +38,19 @@
 </section>
 
 <style>
+    .hero-badge {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px; /* Adjust spacing between elements as needed */
+    }
+
+    .text-accent {
+        font-weight: bold;
+        color: #ff7a00; /* Replace with your preferred orange shade */
+        flex: 0 0 100%; /* Forces it to take up the full width (new row) on mobile */
+    }
+
     .hero-grid {
         display: grid;
         grid-template-columns: 1fr;
