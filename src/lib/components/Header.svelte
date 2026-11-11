@@ -71,11 +71,13 @@
         <div class="navigation-wrapper {menuOpen ? 'open' : ''}">
             <nav class="main-nav">
                 <a href="/">Inicio</a>
-                <a href="/portafolio">Materias</a>
-                <a href="/testimonios">Testimonios</a>
-                <a href="/especialidades">Servicios</a>
+                <a href="/#materias">Materias</a>
+                <a href="/#testimonios">Testimonios</a>
+                <a href="/#servicios">Servicios</a>
+                <a href="/tutorias">Servicios</a>
+                <a href="/cursos">Servicios</a>
                 <a href="/blog">Blog</a>
-                <a href="/contacto">Contacto</a>
+                <a href="/#contacto">Contacto</a>
             </nav>
 
             <!-- Acciones móviles (Login y Socials se integran al menú en móvil) -->

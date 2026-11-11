@@ -27,10 +27,10 @@
 </script>
 
 <section>
-	<h2 class="section-title">Testimonios de estudiantes</h2>
+	<h2 class="section-title" id="testimonios">Testimonios de estudiantes</h2>
 	<div class="grid-2">
 		{#each testimonials as item (item.id)}
-			<article class="testimonial-card card">
+			<article class="card card-start">
 				<header class="card-header">
 					<div class="author-info">
 						<h3>{item.name}</h3>
@@ -53,13 +53,6 @@
 </section>
 
 <style>
-	.testimonial-card {
-		padding: 3rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-
 	.card-header {
 		display: flex;
 		justify-content: space-between;

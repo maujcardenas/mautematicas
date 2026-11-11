@@ -40,7 +40,7 @@
     :global(img) {
         max-width: 100%;
         height: auto;
-        border-radius: 4px;
+        border-radius: 12px;
     }
     :global(.btn) {
         display: inline-block;
@@ -50,7 +50,6 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        /* font-weight: bold; */
         text-align: center;
     }
     :global(.btn:hover) {
@@ -63,11 +62,24 @@
         font-size: 2rem;
         color: #000000;
     }
+    
     :global(.card) {
+        padding: 3rem;
         background-color: #f8fafc;
         border-radius: 12px;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
+
+    :global(.card-start) {
+        justify-content: flex-start;
+    }
+
+    :global(.card-between) {
+        justify-content: space-between;
+    }
+
     :global(.grid-2){
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

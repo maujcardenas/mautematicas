@@ -8,10 +8,9 @@
                 "Ingreso a universidades",
                 "Estadística para investigación",
                 "Preparación para concursos/olimpiadas",
-                "Años de experiencia",
-                "Horarios flexibles",
+                "Clases con horarios flexibles",
             ],
-            buttonLink: "https://mautematicas.com/tutorias",
+            buttonLink: "/tutorias",
             buttonText: "Agendar clase",
         },
         {
@@ -23,8 +22,9 @@
                 "Consejos de aprendizaje",
                 "Guías de estudio",
                 "Resolución de problemas y ejercicios",
+                "Anécdotas matemáticas",
             ],
-            buttonLink: "https://mautematicas.com/blog",
+            buttonLink: "/blog",
             buttonText: "Mirar Blog",
         },
         {
@@ -38,17 +38,17 @@
                 "Ecuaciones Diferenciales",
                 "Álgebra Lineal",
             ],
-            buttonLink: "https://mautematicas.com/courses",
+            buttonLink: "/cursos",
             buttonText: "Registrarte Cursos en Vivo",
         },
     ];
 </script>
 
 <section>
-    <h2 class="section-title">Servicios</h2>
+    <h2 class="section-title" id="servicios">Servicios</h2>
     <div class="grid-2">
         {#each servicios as servicio}
-            <article class="card card-body">
+            <article class="card card-between">
                 <div class="service-content">
                     <h3>{servicio.title}</h3>
                     <p>{servicio.description}</p>
@@ -67,13 +67,6 @@
 </section>
 
 <style>
-    .card-body {
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     .service-content {
         display: flex;
         flex-direction: column;
