@@ -2,7 +2,8 @@
 </script>
 
 <div class="layout-container">
-    <section class="hero-section">
+    <!-- Hero Section  -->
+    <section>
         <div class="card card-start">
             <span class="text-accent">Modalidad 1 a 1 y Grupos Reducidos</span>
             <h1>Clases y Tutorías de Matemáticas en Quito y Online</h1>
@@ -16,138 +17,112 @@
     </section>
 
     <!-- Subjects Section -->
-    <section class="subjects-section">
-        <div class="container">
-            <h2 class="section-title">Áreas de Estudio y Materias</h2>
-            <p>
-                Formación académica integral abarcando desde educación básica
-                hasta investigación científica avanzada.
-            </p>
+    <section>
+        <h2 class="section-title">Áreas de Estudio y Materias</h2>
+        <p>
+            Formación académica integral abarcando desde educación básica hasta
+            investigación científica avanzada.
+        </p>
 
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Matemáticas Escolares y Bachillerato</h3>
-                    <p>
-                        Refuerzo escolar, nivelación, preparación para exámenes
-                        y fortalecimiento de bases matemáticas para colegio.
-                    </p>
-                </div>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Matemáticas Escolares y Bachillerato</h3>
+                <ul class="featured-list">
+                    <li class="pill">Refuerzo escolar/bachillerato</li>
+                    <li class="pill">Nivelación</li>
+                    <li class="pill">Preparación para exámenes</li>
+                    <li class="pill">Fortalecimiento de bases</li>
+                </ul>
+            </div>
 
-                <div class="card">
-                    <h3>Matemáticas Universitarias</h3>
-                    <p>
-                        Cálculo diferencial e integral, ecuaciones
-                        diferenciales, álgebra lineal, matemáticas discretas,
-                        variable compleja, probabilidad y estadística.
-                    </p>
-                    <span class="pill text-accent">Ciencias e Ingeniería</span>
-                </div>
+            <div class="card">
+                <h3>Matemáticas Universitarias</h3>
+                <ul class="featured-list">
+                    <li class="pill">Cálculo I, II, III</li>
+                    <li class="pill">Ecuaciones Diferenciales</li>
+                    <li class="pill">Álgebra Lineal</li>
+                    <li class="pill">Matemáticas Discretas</li>
+                    <li class="pill">Probablidad y Estadística</li>
+                    <li class="pill">Matemáticas financieras</li>
+                    <li class="pill">
+                        Varias materias de ciencias e ingeniería
+                    </li>
+                    <li class="pill">
+                        Varias materias de matemáticas aplicadas
+                    </li>
+                </ul>
+            </div>
 
-                <div class="card">
-                    <h3>Ciencias de la Salud e Investigación</h3>
-                    <p>
-                        Bioestadística, estadística para ingeniería, matemáticas
-                        financieras y fundamentación matemática rigurosa para
-                        tesis, publicaciones e investigaciones.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Preparación Especializada</h3>
-                    <p>
-                        Entrenamiento para exámenes de ingreso a universidades y
-                        preparación avanzada para olimpiadas o concursos de
-                        matemáticas.
-                    </p>
-                </div>
+            <div class="card">
+                <h3>Preparación Especializada</h3>
+                <ul class="featured-list">
+                    <li class="pill">Ingreso a universidades</li>
+                    <li class="pill">Entrenamiento para olimpiadas</li>
+                    <li class="pill">
+                        Estadística rigurosa para investigación
+                    </li>
+                    <li class="pill">Estadística para tesis</li>
+                    <li class="pill">Análisis de Datos</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Pricing & Modality Section -->
-    <section class="pricing-section">
-        <div class="container">
-            <h2>Modalidades y Tarifas Virtuales</h2>
-            <p>
-                Clases interactivas vía Google Meet con uso de pizarra virtual
-                compartida. Al finalizar cada sesión, recibes todas las notas de
-                clase en formato PDF.
-            </p>
+    <!-- Methodology & Logistics Section -->
+    <section>
+        <h2 class="section-title">Metodología y Pagos</h2>
 
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Individual (1 a 1)</h3>
-                    <p class="text-accent">15 / hora por persona</p>
-                    <p>
-                        Atención 100% personalizada enfocada en tus dudas y
-                        ritmo de aprendizaje.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Dúo (2 personas)</h3>
-                    <p class="text-accent">10 / hora por persona</p>
-                    <p>
-                        Ideal para estudiar junto a un compañero de clase con la
-                        misma dinámica de calidad.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Grupo Pequeño (3 personas)</h3>
-                    <p class="text-accent">8 / hora por persona</p>
-                    <p>
-                        Cupo máximo estricto de 3 personas para garantizar la
-                        calidad pedagógica de la sesión.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card note-card">
-                <h3>Clases Presenciales</h3>
+        <div class="grid-2">
+            <div class="card">
+                <h3>¿Cómo trabajamos?</h3>
+                <p>
+                    Nos conectamos mediante <strong>Google Meet</strong> utilizando
+                    un pizarrón virtual interactivo en tiempo real. Cada estudiante
+                    recibe un archivo PDF con el respaldo completo de las notas desarrolladas
+                    durante la tutoría.
+                </p>
                 <p>
                     Las clases son mayoritariamente virtuales, pero existe la
                     posibilidad de coordinar sesiones presenciales previa
                     conversación y disponibilidad.
                 </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Methodology & Logistics Section -->
-    <section class="logistics-section">
-        <div class="container">
-            <h2>Metodología y Pagos</h2>
+            <div class="card">
+                <h3>Formas de Pago</h3>
+                <p>
+                    El pago se realiza mediante <strong
+                        >transferencia bancaria o efectivo</strong
+                    >. Se puede cancelar al finalizar cada clase o, si tomas
+                    varias sesiones, al término de cada semana acumulando todas
+                    las horas impartidas.
+                </p>
+            </div>
 
-            <div class="grid-2">
-                <div class="card">
-                    <h3>¿Cómo trabajamos?</h3>
-                    <p>
-                        Nos conectamos mediante <strong>Google Meet</strong> utilizando
-                        un pizarrón virtual interactivo en tiempo real. Cada estudiante
-                        recibe un archivo PDF con el respaldo completo de las notas
-                        desarrolladas durante la tutoría.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Formas de Pago</h3>
-                    <p>
-                        El pago se realiza mediante <strong
-                            >transferencia bancaria o efectivo</strong
-                        >. Se puede cancelar al finalizar cada clase o, si tomas
-                        varias sesiones, al término de cada semana acumulando
-                        todas las horas impartidas.
-                    </p>
-                </div>
+            <div class="card">
+                <h3>Tarifas</h3>
+                <ul class="featured-list">
+                    <li>
+                        <span>1 persona</span>
+                        <span class="pill"> $15/h por persona </span>
+                    </li>
+                    <li>
+                        <span>2 personas a la vez</span>
+                        <span class="pill"> $10/h por persona </span>
+                    </li>
+                    <li>
+                        <span>3 personas a la vez (max)</span>
+                        <span class="pill"> $8/h por persona </span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Booking CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Agenda tu Tutoría</h2>
+    <section>
+        <h2 class="section-title">Agenda tu Tutoría</h2>
+        <div class="card">
             <p>
                 Selecciona el horario que mejor se adapte a tu disponibilidad
                 directamente en nuestro calendario digital.
@@ -163,4 +138,9 @@
 </div>
 
 <style>
+    .feature-list {
+        margin-top: 1rem;
+        padding-left: 0rem;
+        list-style-type: none;
+    }
 </style>
