@@ -80,7 +80,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        max-width: 800px;
+        max-width: 760px;
     }
 
     :global(.card-start) {

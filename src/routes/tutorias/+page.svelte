@@ -27,7 +27,7 @@
         <div class="grid-2">
             <div class="card">
                 <h3>Matemáticas Escolares y Bachillerato</h3>
-                <ul class="featured-list">
+                <ul class="feature-list">
                     <li class="pill">Refuerzo escolar/bachillerato</li>
                     <li class="pill">Nivelación</li>
                     <li class="pill">Preparación para exámenes</li>
@@ -37,7 +37,7 @@
 
             <div class="card">
                 <h3>Matemáticas Universitarias</h3>
-                <ul class="featured-list">
+                <ul class="feature-list">
                     <li class="pill">Cálculo I, II, III</li>
                     <li class="pill">Ecuaciones Diferenciales</li>
                     <li class="pill">Álgebra Lineal</li>
@@ -55,7 +55,7 @@
 
             <div class="card">
                 <h3>Preparación Especializada</h3>
-                <ul class="featured-list">
+                <ul class="feature-list">
                     <li class="pill">Ingreso a universidades</li>
                     <li class="pill">Entrenamiento para olimpiadas</li>
                     <li class="pill">
@@ -101,20 +101,19 @@
 
             <div class="card">
                 <h3>Tarifas</h3>
-                <ul class="feature-list">
+                <ul>
                     <li>
-                        <span class="text-accent">1 persona</span>
-                        <span class="pill"> $15/h por persona </span>
+                        1 persona (<span class="text-accent"> $15/h </span> por persona)
                     </li>
                     <li>
-                        <span class="text-accent">2 personas a la vez</span>
-                        <span class="pill"> $10/h por persona </span>
+                        2 personas a la vez (<span class="text-accent">
+                            $10/h
+                        </span> por persona)
                     </li>
                     <li>
-                        <span class="text-accent"
-                            >3 personas a la vez (max)</span
-                        >
-                        <span class="pill"> $8/h por persona </span>
+                        3 personas a la vez - máximo (<span class="text-accent">
+                            $18/h
+                        </span> por persona)
                     </li>
                 </ul>
             </div>
