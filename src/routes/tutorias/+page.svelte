@@ -101,17 +101,19 @@
 
             <div class="card">
                 <h3>Tarifas</h3>
-                <ul class="featured-list">
+                <ul class="feature-list">
                     <li>
-                        <span>1 persona</span>
+                        <span class="text-accent">1 persona</span>
                         <span class="pill"> $15/h por persona </span>
                     </li>
                     <li>
-                        <span>2 personas a la vez</span>
+                        <span class="text-accent">2 personas a la vez</span>
                         <span class="pill"> $10/h por persona </span>
                     </li>
                     <li>
-                        <span>3 personas a la vez (max)</span>
+                        <span class="text-accent"
+                            >3 personas a la vez (max)</span
+                        >
                         <span class="pill"> $8/h por persona </span>
                     </li>
                 </ul>
@@ -142,5 +144,8 @@
         margin-top: 1rem;
         padding-left: 0rem;
         list-style-type: none;
+    }
+    .feature-list li {
+        margin: 0.5rem 0rem;
     }
 </style>
