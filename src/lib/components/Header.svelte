@@ -2,20 +2,13 @@
     import LinkedInLogo from "$lib/components/LinkedInLogo.svelte";
     import YouTubeLogo from "$lib/components/YouTubeLogo.svelte";
     import WhatsAppLogo from "$lib/components/WhatsAppLogo.svelte";
-
-    // Estado reactivo en Svelte 5 usando $state
-    let menuOpen = $state(false);
-
-    function toggleMenu() {
-        menuOpen = !menuOpen;
-    }
 </script>
 
 <header>
     <div class="header-container">
-        <!-- Fila Superior -->
-        <div class="top-bar">
-            <div class="logo">
+        <div class="header-grid">
+            <!-- 1. Logo principal -->
+            <div class="logo-section">
                 <a href="/" class="brand-link">
                     <img
                         src="/images/brand/logoMautematicas-darkbg-t.png"
@@ -26,89 +19,52 @@
                 </a>
             </div>
 
-            <div class="top-actions-desktop">
-                <a href="/login" class="login-link">Iniciar sesión</a>
-
-                <div class="social-icons">
-                    <a
-                        href="https://www.linkedin.com/in/mauriciojc/"
-                        aria-label="LinkedIn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <LinkedInLogo />
-                    </a>
-                    <a
-                        href="https://www.youtube.com/@mautematicas"
-                        aria-label="YouTube"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <YouTubeLogo />
-                    </a>
-                    <a
-                        href="https://wa.me/593984029541"
-                        aria-label="WhatsApp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <WhatsAppLogo />
-                    </a>
-                </div>
-            </div>
-
-            <button
-                class="mobile-toggle"
-                onclick={toggleMenu}
-                aria-label="Abrir menú"
-                aria-expanded={menuOpen}
-            >
-                ☰
-            </button>
-        </div>
-
-        <!-- Fila Inferior / Menú Desplegable Móvil -->
-        <div class="navigation-wrapper {menuOpen ? 'open' : ''}">
-            <nav class="main-nav">
+            <!-- 2. Menú de Navegación (dividido en 2 bloques de 4 items para el reflujo responsivo) -->
+            <nav class="nav-group nav-group-1">
                 <a href="/">Inicio</a>
                 <a href="/#materias">Materias</a>
                 <a href="/#testimonios">Testimonios</a>
                 <a href="/#servicios">Servicios</a>
+            </nav>
+
+            <nav class="nav-group nav-group-2">
                 <a href="/tutorias">Tutorías</a>
                 <a href="/cursos">Cursos</a>
                 <a href="/blog">Blog</a>
                 <a href="/#contacto">Contacto</a>
             </nav>
 
-            <!-- Acciones móviles (Login y Socials se integran al menú en móvil) -->
-            <div class="mobile-actions">
+            <!-- 3. Menú de Iniciar Sesión -->
+            <div class="login-section">
                 <a href="/login" class="login-link">Iniciar sesión</a>
-                <div class="social-icons">
-                    <a
-                        href="https://www.linkedin.com/in/mauriciojs"
-                        aria-label="LinkedIn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <LinkedInLogo />
-                    </a>
-                    <a
-                        href="http://www.youtube.com/@mautematicas"
-                        aria-label="YouTube"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <YouTubeLogo />
-                    </a>
-                    <a
-                        href="https://wa.me/593984029541"
-                        aria-label="WhatsApp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <WhatsAppLogo />
-                    </a>
-                </div>
+            </div>
+
+            <!-- 4. Íconos de Redes Sociales -->
+            <div class="social-icons">
+                <a
+                    href="https://www.linkedin.com/in/mauriciojc/"
+                    aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <LinkedInLogo />
+                </a>
+                <a
+                    href="https://www.youtube.com/@mautematicas"
+                    aria-label="YouTube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <YouTubeLogo />
+                </a>
+                <a
+                    href="https://wa.me/593984029541"
+                    aria-label="WhatsApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <WhatsAppLogo />
+                </a>
             </div>
         </div>
     </div>
@@ -128,35 +84,72 @@
     .header-container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0.75rem 1.5rem;
     }
 
-    /* --- Fila Superior --- */
-    .top-bar {
-        display: flex;
-        justify-content: space-between;
+    /* --- Estructura Grid Principal (Desktop: 1 sola fila) --- */
+    .header-grid {
+        display: grid;
+        grid-template-areas: "logo nav1 nav2 login socials";
+        grid-template-columns: auto auto auto auto auto;
         align-items: center;
-        padding: 0.75rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        justify-content: space-between;
+        gap: 1.25rem;
     }
 
+    .logo-section {
+        grid-area: logo;
+    }
+
+    .nav-group-1 {
+        grid-area: nav1;
+    }
+
+    .nav-group-2 {
+        grid-area: nav2;
+    }
+
+    .login-section {
+        grid-area: login;
+    }
+
+    .social-icons {
+        grid-area: socials;
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+    }
+
+    /* --- Elementos --- */
     .brand-link {
         display: inline-block;
         line-height: 0;
     }
 
     .brand-link img {
-        width: 100%;
-        max-width: 150px;
-        height: auto;
-        aspect-ratio: 2 / 1;
+        width: auto;
+        height: 32px; /* Ligeramente superior a los 24px de los íconos sociales y manteniendo proporción cuadrada */
+        aspect-ratio: 1 / 1;
         object-fit: contain;
     }
 
-    .top-actions-desktop {
+    .nav-group {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+
+    .nav-group a {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav-group a:hover {
+        opacity: 0.8;
     }
 
     .login-link {
@@ -169,6 +162,7 @@
         transition:
             background-color 0.2s,
             color 0.2s;
+        white-space: nowrap;
     }
 
     .login-link:hover {
@@ -176,99 +170,51 @@
         color: #0c325a;
     }
 
-    .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 0.85rem;
+    :global(.social-icons svg) {
+        width: 24px;
+        height: 24px;
     }
 
-    /* --- Fila Inferior (Navegación Principal) --- */
-    .main-nav {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0.75rem 0;
-        gap: 1rem;
-        flex-wrap: wrap;
+    /* --- Diseño Responsivo --- */
+
+    /* Tablet: 2 filas (Fila 1: Logo + Menú completo | Fila 2: Login + Redes) */
+    @media (max-width: 1100px) {
+        .header-grid {
+            grid-template-areas:
+                "logo nav1 nav2"
+                "login socials socials";
+            grid-template-columns: auto auto auto;
+            justify-content: flex-start;
+            gap: 1rem 1.5rem;
+        }
     }
 
-    .main-nav a {
-        color: #ffffff;
-        font-weight: 500;
-        font-size: 0.95rem;
-        text-decoration: none;
-        transition: opacity 0.2s;
+    /* Pantallas más pequeñas: 3 filas (Fila 1: Logo + 4 items | Fila 2: 4 items | Fila 3: Login + Redes) */
+    @media (max-width: 850px) {
+        .header-grid {
+            grid-template-areas:
+                "logo nav1"
+                "nav2 nav2"
+                "login socials";
+            grid-template-columns: auto 1fr;
+        }
+        .social-icons {
+            justify-content: flex-end;
+        }
     }
 
-    .main-nav a:hover {
-        opacity: 0.8;
-    }
-
-    .mobile-toggle,
-    .mobile-actions {
-        display: none;
-    }
-
-    /* --- Diseño Responsivo (Móvil y Tablets) --- */
-    @media (max-width: 900px) {
-        .top-bar {
-            border-bottom: none;
+    /* Pantallas angostas: 4 filas (Fila 1: Logo + 4 items | Fila 2: 4 items | Fila 3: Login | Fila 4: Redes) */
+    @media (max-width: 600px) {
+        .header-grid {
+            grid-template-areas:
+                "logo nav1"
+                "nav2 nav2"
+                "login login"
+                "socials socials";
+            grid-template-columns: auto 1fr;
         }
-
-        .top-actions-desktop {
-            display: none;
-        }
-
-        .mobile-toggle {
-            display: block;
-            background: none;
-            border: none;
-            font-size: 1.75rem;
-            color: #ffffff;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        .navigation-wrapper {
-            display: none;
-            flex-direction: column;
-            gap: 1.5rem;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: #0c325a;
-            padding: 1.5rem;
-            border-bottom: 1px solid #2a2829;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .navigation-wrapper.open {
-            display: flex;
-        }
-
-        .main-nav {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0;
-            gap: 1rem;
-        }
-
-        .main-nav a {
-            font-size: 1.1rem;
-            width: 100%;
-        }
-
-        .mobile-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .mobile-actions .login-link {
-            text-align: center;
+        .social-icons {
+            justify-content: flex-start;
         }
     }
 </style>

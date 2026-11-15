@@ -74,9 +74,7 @@
                 <h3>¿Cómo trabajamos?</h3>
                 <p>
                     Nos conectamos mediante <strong>Google Meet</strong> utilizando
-                    un pizarrón virtual interactivo en tiempo real. Cada estudiante
-                    recibe un archivo PDF con el respaldo completo de las notas desarrolladas
-                    durante la tutoría.
+                    un pizarrón virtual interactivo en tiempo real.
                 </p>
                 <p>
                     Cada estudiante recibe un archivo PDF con el respaldo
@@ -116,7 +114,7 @@
                     </li>
                     <li>
                         3 personas a la vez - máximo (<span class="text-accent">
-                            $18/h
+                            $8/h
                         </span> por persona)
                     </li>
                 </ul>
