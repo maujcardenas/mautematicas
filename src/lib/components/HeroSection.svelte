@@ -16,9 +16,9 @@
                 Sitio web creado por Mauricio Cárdenas, matemático y profesor.
             </p>
             <p>
-                Tengo años de experiencia enseñando a cientos de estudiantes de
-                todo nivel: básico-bachillerato, universitario y post
-                universitario.
+                Tengo años de experiencia enseñando matemáticas y física a
+                estudiantes de todo nivel: básico-bachillerato, universitario y
+                post universitario.
             </p>
             <p>Registrate a nuestros cursos presenciales. O visita el Blog.</p>
 

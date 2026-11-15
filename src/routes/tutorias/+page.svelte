@@ -5,13 +5,14 @@
     <!-- Hero Section  -->
     <section>
         <div class="card card-start">
-            <span class="text-accent">Modalidad 1 a 1 y Grupos Reducidos</span>
-            <h1>Clases y Tutorías de Matemáticas en Quito y Online</h1>
+            <span class="text-accent">Clases 1-1 o Grupos Reducidos</span>
+            <h1>Tutorías de Matemáticas en Quito y Online</h1>
             <p>
-                Servicio especializado de tutorías de matemáticas para
-                estudiantes en <strong>Quito, Ecuador</strong> y de forma remota
-                para todo el mundo. Clases impartidas en español y en inglés con
-                un enfoque riguroso, analítico y adaptado a tu nivel académico.
+                Servicio de tutorías de matemáticas para estudiantes en <strong
+                    >Quito, Ecuador</strong
+                > y de forma remota para todo el mundo. Clases impartidas en español
+                o inglés con un enfoque efectivo, práctico y exacto adaptado a tu
+                nivel académico.
             </p>
         </div>
     </section>
@@ -19,10 +20,6 @@
     <!-- Subjects Section -->
     <section>
         <h2 class="section-title">Áreas de Estudio y Materias</h2>
-        <p>
-            Formación académica integral abarcando desde educación básica hasta
-            investigación científica avanzada.
-        </p>
 
         <div class="grid-2">
             <div class="card">
@@ -82,6 +79,10 @@
                     durante la tutoría.
                 </p>
                 <p>
+                    Cada estudiante recibe un archivo PDF con el respaldo
+                    completo de las notas desarrolladas durante la tutoría.
+                </p>
+                <p>
                     Las clases son mayoritariamente virtuales, pero existe la
                     posibilidad de coordinar sesiones presenciales previa
                     conversación y disponibilidad.
@@ -93,15 +94,18 @@
                 <p>
                     El pago se realiza mediante <strong
                         >transferencia bancaria o efectivo</strong
-                    >. Se puede cancelar al finalizar cada clase o, si tomas
-                    varias sesiones, al término de cada semana acumulando todas
-                    las horas impartidas.
+                    >.
+                </p>
+                <p>
+                    Se puede cancelar al finalizar cada clase o, si tomas varias
+                    sesiones, al término de cada semana acumulando todas las
+                    horas impartidas.
                 </p>
             </div>
 
             <div class="card">
                 <h3>Tarifas</h3>
-                <ul>
+                <ul class="feature-list">
                     <li>
                         1 persona (<span class="text-accent"> $15/h </span> por persona)
                     </li>
@@ -129,7 +133,7 @@
                 directamente en nuestro calendario digital.
             </p>
             <a
-                href="URL_DE_GOOGLE_CALENDAR_BOOKINGS"
+                href="https://calendar.app.google/3iD3KFGh6BaynrNK6"
                 class="btn text-accent"
                 target="_blank"
                 rel="noopener noreferrer">Reservar Clase en Google Calendar</a
