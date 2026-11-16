@@ -85,7 +85,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 12px;
+        gap: 2rem;
     }
 
     .header-part {
@@ -93,7 +93,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 8px;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     .brand-link {
@@ -113,8 +114,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 1rem;
         align-items: center;
+        gap: 1rem;
     }
 
     .nav-menu a {
@@ -133,7 +134,7 @@
     .social-icons {
         display: flex;
         align-items: center;
-        gap: 0.85rem;
+        gap: 1rem;
     }
 
     .login-link {
