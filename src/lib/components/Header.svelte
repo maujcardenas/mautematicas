@@ -6,8 +6,8 @@
 
 <header>
     <div class="header-container">
-        <div class="header-grid">
-            <!-- 1. Logo principal -->
+        <div class="header-part">
+            <!-- 1a. Logo principal -->
             <div class="logo-section">
                 <a href="/" class="brand-link">
                     <img
@@ -19,27 +19,23 @@
                 </a>
             </div>
 
-            <!-- 2. Menú de Navegación (dividido en 2 bloques de 4 items para el reflujo responsivo) -->
-            <nav class="nav-group nav-group-1">
-                <a href="/">Inicio</a>
-                <a href="/#materias">Materias</a>
+            <!-- 1b. Menú de Navegación -->
+            <nav class="nav-menu">
                 <a href="/#testimonios">Testimonios</a>
                 <a href="/#servicios">Servicios</a>
-            </nav>
-
-            <nav class="nav-group nav-group-2">
                 <a href="/tutorias">Tutorías</a>
                 <a href="/cursos">Cursos</a>
                 <a href="/blog">Blog</a>
                 <a href="/#contacto">Contacto</a>
             </nav>
-
-            <!-- 3. Menú de Iniciar Sesión -->
+        </div>
+        <div class="header-part">
+            <!-- 2a. Menú de Navegación -->
             <div class="login-section">
                 <a href="/login" class="login-link">Iniciar sesión</a>
             </div>
 
-            <!-- 4. Íconos de Redes Sociales -->
+            <!-- 2b. Íconos de Redes Sociales -->
             <div class="social-icons">
                 <a
                     href="https://www.linkedin.com/in/mauriciojc/"
@@ -85,42 +81,21 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0.75rem 1.5rem;
-    }
-
-    /* --- Estructura Grid Principal (Desktop: 1 sola fila) --- */
-    .header-grid {
-        display: grid;
-        grid-template-areas: "logo nav1 nav2 login socials";
-        grid-template-columns: auto auto auto auto auto;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.25rem;
-    }
-
-    .logo-section {
-        grid-area: logo;
-    }
-
-    .nav-group-1 {
-        grid-area: nav1;
-    }
-
-    .nav-group-2 {
-        grid-area: nav2;
-    }
-
-    .login-section {
-        grid-area: login;
-    }
-
-    .social-icons {
-        grid-area: socials;
         display: flex;
-        align-items: center;
-        gap: 0.85rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
     }
 
-    /* --- Elementos --- */
+    .header-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
     .brand-link {
         display: inline-block;
         line-height: 0;
@@ -128,28 +103,37 @@
 
     .brand-link img {
         width: auto;
-        height: 32px; /* Ligeramente superior a los 24px de los íconos sociales y manteniendo proporción cuadrada */
+        height: 32px; /* Ligeramente superior a los 24px */
         aspect-ratio: 1 / 1;
         object-fit: contain;
     }
 
-    .nav-group {
+    .nav-menu {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 1rem;
+        align-items: center;
     }
 
-    .nav-group a {
+    .nav-menu a {
         color: #ffffff;
         font-weight: 500;
-        font-size: 0.95rem;
+        /* font-size: 0.95rem; */
         text-decoration: none;
         transition: opacity 0.2s;
         white-space: nowrap;
     }
 
-    .nav-group a:hover {
+    .nav-menu a:hover {
         opacity: 0.8;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
     }
 
     .login-link {
@@ -168,53 +152,5 @@
     .login-link:hover {
         background-color: #ffffff;
         color: #0c325a;
-    }
-
-    :global(.social-icons svg) {
-        width: 24px;
-        height: 24px;
-    }
-
-    /* --- Diseño Responsivo --- */
-
-    /* Tablet: 2 filas (Fila 1: Logo + Menú completo | Fila 2: Login + Redes) */
-    @media (max-width: 1100px) {
-        .header-grid {
-            grid-template-areas:
-                "logo nav1 nav2"
-                "login socials socials";
-            grid-template-columns: auto auto auto;
-            justify-content: flex-start;
-            gap: 1rem 1.5rem;
-        }
-    }
-
-    /* Pantallas más pequeñas: 3 filas (Fila 1: Logo + 4 items | Fila 2: 4 items | Fila 3: Login + Redes) */
-    @media (max-width: 850px) {
-        .header-grid {
-            grid-template-areas:
-                "logo nav1"
-                "nav2 nav2"
-                "login socials";
-            grid-template-columns: auto 1fr;
-        }
-        .social-icons {
-            justify-content: flex-end;
-        }
-    }
-
-    /* Pantallas angostas: 4 filas (Fila 1: Logo + 4 items | Fila 2: 4 items | Fila 3: Login | Fila 4: Redes) */
-    @media (max-width: 600px) {
-        .header-grid {
-            grid-template-areas:
-                "logo nav1"
-                "nav2 nav2"
-                "login login"
-                "socials socials";
-            grid-template-columns: auto 1fr;
-        }
-        .social-icons {
-            justify-content: flex-start;
-        }
     }
 </style>
