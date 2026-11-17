@@ -21,8 +21,7 @@
 
             <!-- 1b. Menú de Navegación -->
             <nav class="nav-menu">
-                <a href="/#testimonios">Testimonios</a>
-                <a href="/#servicios">Servicios</a>
+                <a href="/">Inicio</a>
                 <a href="/tutorias">Tutorías</a>
                 <a href="/cursos">Cursos</a>
                 <a href="/blog">Blog</a>
@@ -31,9 +30,9 @@
         </div>
         <div class="header-part">
             <!-- 2a. Menú de Navegación -->
-            <div class="login-section">
+            <!-- <div class="login-section">
                 <a href="/login" class="login-link">Iniciar sesión</a>
-            </div>
+            </div> -->
 
             <!-- 2b. Íconos de Redes Sociales -->
             <div class="social-icons">
