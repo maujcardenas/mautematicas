@@ -43,6 +43,8 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+    }
+    .col a {
         color: #e0f2fe;
     }
     .col a:hover {
