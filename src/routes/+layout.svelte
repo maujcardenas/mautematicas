@@ -97,11 +97,11 @@
         gap: 2rem;
     }
     :global(.pill) {
-        background-color: #e0f2fe;
+        background-color: #57df6d;
         color: #0C325A;
         padding: 0.5rem 0.5rem;
-        border-radius: 4px;
-        font-size: 0.9rem;
+        border-radius: 1px 12px 12px 1px;
+        font-size: 0.8rem;
         font-weight: 800;
     }
 </style>

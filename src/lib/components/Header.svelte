@@ -127,7 +127,7 @@
     }
 
     .nav-menu a:hover {
-        opacity: 0.8;
+        color: #ff7a00;
     }
 
     .social-icons {

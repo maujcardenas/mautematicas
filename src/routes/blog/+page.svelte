@@ -30,43 +30,41 @@
     <section>
         <h2 class="section-title">Blog</h2>
 
-        <div class="search-and-filter card">
-            <h3>Búsqueda por texto:</h3>
-            <input
-                type="text"
-                placeholder="Buscar palabras clave..."
-                bind:value={searchQuery}
-                class="input-field"
-            />
+        <h3>Búsqueda por texto:</h3>
+        <input
+            type="text"
+            placeholder="Buscar palabras clave..."
+            bind:value={searchQuery}
+            class="input-field"
+        />
 
-            <div class="categories-selector">
-                <h3>Filtra por Categoría:</h3>
-                {#each categories as cat}
-                    <button
-                        type="button"
-                        class="pill {selectedCategory === cat ? 'active' : ''}"
-                        onclick={() => (selectedCategory = cat)}
-                    >
-                        {cat}
-                    </button>
-                {/each}
-            </div>
+        <div class="categories-selector">
+            <h3>Filtra por Categoría:</h3>
+            {#each categories as cat}
+                <button
+                    type="button"
+                    class={selectedCategory === cat ? "pill" : "text-accent"}
+                    onclick={() => (selectedCategory = cat)}
+                >
+                    {cat}
+                </button>
+            {/each}
         </div>
 
         <div class="grid-2">
             {#each filteredPosts as post}
-                <a href={`/blog/${post.slug}`} class="card card-link">
+                <a href={`/blog/${post.slug}`} class="card-link">
                     <img src={post.image} alt={post.title} />
-                    <div class="card-body">
-                        <div class="pill">
-                            {post.category}
-                        </div>
-                        <div class="pill">
-                            {post.date}
-                        </div>
+                    <div class="card card-start">
                         <h3 class="post-title">
                             {post.title}
                         </h3>
+                        <div class="pill">
+                            {post.category}
+                        </div>
+                        <div class="text-accent">
+                            {post.date}
+                        </div>
                         <p class="post-description">
                             {post.description}
                         </p>
@@ -84,14 +82,6 @@
         padding: 0 2rem;
     }
 
-    .search-and-filter {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 1.5rem;
-        margin-bottom: 4rem;
-    }
-
     .input-field {
         flex: 1;
         min-width: 200px;
@@ -101,10 +91,6 @@
     }
     .pill {
         margin: 0.25rem 0rem 0.25rem 0.25rem;
-    }
-    .active {
-        background-color: #000000;
-        color: #e0f2fe;
     }
 
     .card-link {
@@ -119,9 +105,5 @@
     .post-description {
         color: #2a2829;
         font-size: 0.9rem;
-    }
-
-    .card-body {
-        padding: 1.5rem;
     }
 </style>
